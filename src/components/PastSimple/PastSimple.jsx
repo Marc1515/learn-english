@@ -4,4 +4,4 @@ const PastSimple = () => {
 	return <div>PastSimple</div>;
 };
 
-export default PastSimple;
+export { PastSimple };

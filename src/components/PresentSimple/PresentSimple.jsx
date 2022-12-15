@@ -4,4 +4,4 @@ const PresentSimple = () => {
 	return <div>PresentSimple</div>;
 };
 
-export default PresentSimple;
+export { PresentSimple };
