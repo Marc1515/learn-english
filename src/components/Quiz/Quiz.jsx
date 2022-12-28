@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import preguntas from './preguntas';
+import './Quiz.css';
 
 function Quiz() {
 	const [preguntaActual, setPreguntaActual] = useState(0);
@@ -40,13 +41,18 @@ function Quiz() {
 
 	if (isFinished)
 		return (
-			<main className='app'>
+			<main className='main-container'>
 				<div className='juego-terminado'>
 					<span>
 						{' '}
 						Total {puntuacion} de {preguntas.length}{' '}
 					</span>
-					<button onClick={() => (window.location.href = '/')}>
+					<button
+						onClick={() => {
+							setIsFinished(false);
+							setIsStarted(true);
+						}}
+					>
 						{' '}
 						Volver a jugar
 					</button>
@@ -65,7 +71,7 @@ function Quiz() {
 
 	if (answerShow)
 		return (
-			<main className='app'>
+			<main className='main-container'>
 				<div className='lado-izquierdo'>
 					{preguntas.map((pregunta, i) => (
 						<div key={pregunta.titulo}>
@@ -82,7 +88,8 @@ function Quiz() {
 					))}
 					<button
 						onClick={() => {
-							window.location.href = '/';
+							setIsFinished(false);
+							setIsStarted(true);
 						}}
 					>
 						Volver a jugar
@@ -93,8 +100,8 @@ function Quiz() {
 
 	if (isStarted)
 		return (
-			<main className='app'>
-				<div className='juego-terminado'>
+			<div>
+				<div>
 					<button
 						onClick={() => {
 							setTiempoRestante(20);
@@ -107,11 +114,11 @@ function Quiz() {
 						Empezar a jugar
 					</button>
 				</div>
-			</main>
+			</div>
 		);
 
 	return (
-		<main className='app'>
+		<main className='main-container'>
 			<div className='lado-izquierdo'>
 				<div className='numero-pregunta'>
 					<span> Pregunta {preguntaActual + 1}</span> de {preguntas.length}

@@ -11,13 +11,17 @@ const NavBar = () => {
 	return (
 		<>
 			<NavContainer>
-				<h2>
-					Navbar<span>Responsive</span>
-				</h2>
+				<div className='container-navbar'>
+					<h2>
+						Learn <span>English</span>
+					</h2>
+				</div>
 				<div className={`links ${clicked ? 'active' : ''}`}>
 					<a href='/'>Home</a>
-					<a href='/'>Shop</a>
-					<a href='/'>About</a>
+					<a href='/#/present-simple' onClick={handleClick}>
+						Present Simple
+					</a>
+					<a href='/#/past-simple'>Past Simple</a>
 					<a href='/'>Contact</a>
 					<a href='/'>Blog</a>
 				</div>
@@ -33,6 +37,16 @@ const NavBar = () => {
 export default NavBar;
 
 const NavContainer = styled.nav`
+	.container-navbar {
+		z-index: 5;
+	}
+
+	padding: 0.4rem;
+	background-color: #333;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
 	h2 {
 		color: white;
 		font-weight: 400;
@@ -40,11 +54,7 @@ const NavContainer = styled.nav`
 			font-weight: bold;
 		}
 	}
-	padding: 0.4rem;
-	background-color: #333;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+
 	a {
 		color: white;
 		text-decoration: none;
@@ -76,12 +86,13 @@ const NavContainer = styled.nav`
 		}
 	}
 	.links.active {
+		z-index: 5;
 		width: 100%;
 		display: block;
 		position: absolute;
 		margin-left: auto;
 		margin-right: auto;
-		top: 30%;
+		top: 15%;
 		left: 0;
 		right: 0;
 		text-align: center;
@@ -92,6 +103,7 @@ const NavContainer = styled.nav`
 		}
 	}
 	.burguer {
+		z-index: 5;
 		@media (min-width: 768px) {
 			display: none;
 		}
@@ -105,10 +117,11 @@ const BgDiv = styled.div`
 	left: -1000px;
 	width: 100%;
 	height: 100%;
-	z-index: -1;
+	z-index: 1;
 	transition: all 0.6s ease;
 
 	&.active {
+		z-index: 1;
 		border-radius: 0 0 80% 0;
 		top: 0;
 		left: 0;
