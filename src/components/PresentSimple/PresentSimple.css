@@ -1,3 +1,9 @@
 body {
     color: black;
 }
+
+.container-PresentSimple {
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
