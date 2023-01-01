@@ -5,29 +5,24 @@ import Typography from '@mui/material/Typography';
 
 import ReglasGramaticalesPresentSimple from './ReglasGramaticalesPresentSimple/ReglasGramaticalesPresentSimple';
 import EstructuraPresentSimple from './EstructuraPresentSimple/EstructuraPresentSimple';
+import AdverbiosPresentSimple from './AdverbiosPresentSimple/AdverbiosPresentSimple';
 
+import './AdverbiosPresentSimple/AdverbiosPresentSimple.css';
 
 const PresentSimple = () => {
+	function createData(subject: string, conjugation: string) {
+		return { subject, conjugation };
+	}
 
-
-	function createData(
-  subject: string,
-  conjugation: string,
-
-) {
-  return { subject, conjugation};
-}
-
-const rows = [
-  createData('I', 'talk'),
-  createData('You','eat' ),
-  createData('We','learn' ),
-  createData('They','do' ),
-  createData('He', 'talks'),
-  createData('she', 'eats'),
-  createData('It', 'does'),
-];
-
+	const rows = [
+		createData('I', 'talk'),
+		createData('You', 'eat'),
+		createData('We', 'learn'),
+		createData('They', 'do'),
+		createData('He', 'talks'),
+		createData('she', 'eats'),
+		createData('It', 'does'),
+	];
 
 	return (
 		<>
@@ -47,7 +42,93 @@ const rows = [
 				<ReglasGramaticalesPresentSimple />
 				{/* Estructura */}
 				<EstructuraPresentSimple />
-				
+				{/* Adverbios */}
+				<AdverbiosPresentSimple />
+
+				<Typography mt={3} variant='body1' paragraph>
+					Se utiliza para hablar de generalidades o hechos científicos:
+				</Typography>
+
+				<div className='adverbs-container'>
+					<Typography variant='body1' paragraph>
+						He doesn’t/does not eat vegetables
+					</Typography>
+					<Typography variant='body1' paragraph>
+						Él no come verduras.
+					</Typography>
+					<Typography variant='body1' paragraph>
+						She works in a hospital
+					</Typography>
+					<Typography variant='body1' paragraph>
+						Ella trabaja en una hospital.
+					</Typography>
+					<Typography variant='body1' paragraph>
+						Elephants live in Africa.
+					</Typography>
+					<Typography variant='body1' paragraph>
+						Los elefantes viven en África.
+					</Typography>
+					<Typography variant='body1' paragraph>
+						Bogota is in Colombia.
+					</Typography>
+					<Typography variant='body1' paragraph>
+						Bogotá está en Colombia.
+					</Typography>
+				</div>
+				<Typography variant='body1' paragraph>
+					Se usa para eventos programados en el futuro próximo:
+				</Typography>
+
+				<div className='adverbs-container'>
+					<Typography variant='body1' paragraph>
+						The train leaves at 10:00.
+					</Typography>
+					<Typography variant='body1' paragraph>
+						El tren sale a las 10h.
+					</Typography>
+					<Typography variant='body1' paragraph>
+						The party is tonight.
+					</Typography>
+					<Typography variant='body1' paragraph>
+						La fiesta es esta noche.
+					</Typography>
+					<Typography variant='body1' paragraph>
+						Does the festival start tomorrow?
+					</Typography>
+					<Typography variant='body1' paragraph>
+						¿Empieza el festival mañana?
+					</Typography>
+				</div>
+				<Typography variant='body1' paragraph>
+					Se usa para instrucciones (el imperativo).
+				</Typography>
+
+				<div className='adverbs-container'>
+					<Typography variant='body1' paragraph>
+						Open the window.
+					</Typography>
+					<Typography variant='body1' paragraph>
+						Abre la ventana.
+					</Typography>
+					<Typography variant='body1' paragraph>
+						Eat the vegetables.
+					</Typography>
+					<Typography variant='body1' paragraph>
+						Come las verduras.
+					</Typography>
+					<Typography variant='body1' paragraph>
+						Don’t cry.
+					</Typography>
+					<Typography variant='body1' paragraph>
+						No llores.
+					</Typography>
+					<Typography variant='body1' paragraph>
+						Do your homework.
+					</Typography>
+					<Typography variant='body1' paragraph>
+						Haz los deberes.
+					</Typography>
+				</div>
 			</div>
 			<Quiz />
 		</>
