@@ -3,8 +3,8 @@ import './QuizPresentSimple.css';
 import StartQuizPresentSimple from './StartQuizPresentSimple/StartQuizPresentSimple';
 import QuestionsQuizPresentSimple from './QuestionsQuizPresentSimple/QuestionsQuizPresentSimple';
 import FinishQuizPresentSimple from './FinishQuizPresentSimple/FinishQuizPresentSimple';
-import { QuizContext } from '../../../contexts/quizContext';
 import AnswersQuizPresentSimple from './AnswersQuizPresentSimple/AnswersQuizPresentSimple';
+import { QuizContext } from '../../../contexts/quizContext';
 
 function QuizPresentSimple() {
 	const { isFinished, answerShow, isStarted } = useContext(QuizContext);

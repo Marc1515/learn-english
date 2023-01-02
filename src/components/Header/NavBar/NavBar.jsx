@@ -5,8 +5,11 @@ import BurgerButton from '../BurgerButton/BurgerButton';
 const NavBar = () => {
 	const [clicked, setClicked] = useState(false);
 
-	const handleClick = () => {
-		setClicked(!clicked);
+	const handleClick = (e) => {
+		const widthScreen = window.screen.width;
+		if (widthScreen <= 767) {
+			setClicked(!clicked);
+		}
 	};
 	return (
 		<>
@@ -21,7 +24,9 @@ const NavBar = () => {
 					<a href='/#/present-simple' onClick={handleClick}>
 						Present Simple
 					</a>
-					<a href='/#/past-simple'>Past Simple</a>
+					<a href='/#/past-simple' onClick={handleClick}>
+						Past Simple
+					</a>
 					<a href='/'>Contact</a>
 					<a href='/'>Blog</a>
 				</div>
