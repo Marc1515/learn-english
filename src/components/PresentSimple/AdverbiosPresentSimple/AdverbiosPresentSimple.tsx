@@ -13,6 +13,7 @@ import {
 	TableRow,
 	Paper,
 } from '@mui/material';
+import './AdverbiosPresentSimple.css';
 
 const AdverbiosPresentSimple = () => {
 	function createData(adverbio: string, traduccion: string) {

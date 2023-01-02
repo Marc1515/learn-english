@@ -7,23 +7,7 @@ import ReglasGramaticalesPresentSimple from './ReglasGramaticalesPresentSimple/R
 import EstructuraPresentSimple from './EstructuraPresentSimple/EstructuraPresentSimple';
 import AdverbiosPresentSimple from './AdverbiosPresentSimple/AdverbiosPresentSimple';
 
-import './AdverbiosPresentSimple/AdverbiosPresentSimple.css';
-
 const PresentSimple = () => {
-	function createData(subject: string, conjugation: string) {
-		return { subject, conjugation };
-	}
-
-	const rows = [
-		createData('I', 'talk'),
-		createData('You', 'eat'),
-		createData('We', 'learn'),
-		createData('They', 'do'),
-		createData('He', 'talks'),
-		createData('she', 'eats'),
-		createData('It', 'does'),
-	];
-
 	return (
 		<>
 			<div className='container-PresentSimple'>
