@@ -17,13 +17,15 @@
     max-width: 650px;
     min-width: 300px;
     height: min-content;
-    min-height: 200px;
+    min-height: 300px;
     padding: 20px;
     box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
 
   }
+
   
   /* PREGUNTAS */
   .lado-izquierdo {
@@ -32,6 +34,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    gap: .8rem;
   }
   
   .pregunta-numero {
@@ -42,8 +45,8 @@
     font-size: 28px;
   }
   
-  .pregunta-titulo {
-    margin-bottom: 12px;
+  .titulo-pregunta {
+    font-size: larger;
   }
   
   .lado-derecho {
@@ -51,6 +54,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: .4rem;
   }
   
   /* FINALIZADO */
@@ -60,6 +64,18 @@
     justify-content: space-evenly;
     font-size: 24px;
     align-items: center;
+    gap: .4rem;
+  }
+
+  .juego-terminado :nth-child(1) {
+    padding-bottom: 1rem;
+    font-size: larger;
+  }
+
+  .empezar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   /* GRAL */
@@ -74,6 +90,13 @@
     align-items: center;
     border: 5px solid #234668;
     cursor: pointer;
+  }
+
+  .btn-one {
+
+    width: 50%;
+    justify-content: center;
+
   }
   
   .tiempo-restante {

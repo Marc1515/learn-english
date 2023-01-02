@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import preguntas from './preguntas';
-import './Quiz.css';
+import './QuizPresentSimple.css';
 
-function Quiz() {
+function QuizPresentSimple() {
 	const [preguntaActual, setPreguntaActual] = useState(0);
 	const [puntuacion, setPuntuacion] = useState(0);
 	const [isFinished, setIsFinished] = useState(false);
@@ -48,6 +48,7 @@ function Quiz() {
 						Total {puntuacion} de {preguntas.length}{' '}
 					</span>
 					<button
+						className='btn-one'
 						onClick={() => {
 							setIsFinished(false);
 							setIsStarted(true);
@@ -57,6 +58,7 @@ function Quiz() {
 						Volver a jugar
 					</button>
 					<button
+						className='btn-one'
 						onClick={() => {
 							setIsFinished(false);
 							setAnswerShow(true);
@@ -90,6 +92,7 @@ function Quiz() {
 						onClick={() => {
 							setIsFinished(false);
 							setIsStarted(true);
+							setAnswerShow(false);
 						}}
 					>
 						Volver a jugar
@@ -100,12 +103,14 @@ function Quiz() {
 
 	if (isStarted)
 		return (
-			<div>
-				<div>
+			<main className='main-container'>
+				<div className='empezar-container'>
 					<button
+						className='btn-one'
 						onClick={() => {
 							setTiempoRestante(20);
 							setPreguntaActual(0);
+							setPuntuacion(0);
 							setIsStarted(false);
 							setAreDisabled(false);
 						}}
@@ -114,7 +119,7 @@ function Quiz() {
 						Empezar a jugar
 					</button>
 				</div>
-			</div>
+			</main>
 		);
 
 	return (
@@ -159,4 +164,4 @@ function Quiz() {
 	);
 }
 
-export default Quiz;
+export default QuizPresentSimple;

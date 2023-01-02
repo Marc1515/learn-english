@@ -1,5 +1,5 @@
 import React from 'react';
-import Quiz from '../Quiz/Quiz';
+import QuizPresentSimple from './QuizPresentSimple/QuizPresentSimple';
 import './PresentSimple.css';
 import Typography from '@mui/material/Typography';
 
@@ -114,7 +114,7 @@ const PresentSimple = () => {
 					</Typography>
 				</div>
 			</div>
-			<Quiz />
+			<QuizPresentSimple />
 		</>
 	);
 };
