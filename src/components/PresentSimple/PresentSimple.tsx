@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import ReglasGramaticalesPresentSimple from './ReglasGramaticalesPresentSimple/ReglasGramaticalesPresentSimple';
 import EstructuraPresentSimple from './EstructuraPresentSimple/EstructuraPresentSimple';
 import AdverbiosPresentSimple from './AdverbiosPresentSimple/AdverbiosPresentSimple';
+import { QuizContextProvider } from '../../contexts/quizContext';
 
 const PresentSimple = () => {
 	return (
@@ -114,7 +115,9 @@ const PresentSimple = () => {
 					</Typography>
 				</div>
 			</div>
-			<QuizPresentSimple />
+			<QuizContextProvider>
+				<QuizPresentSimple />
+			</QuizContextProvider>
 		</>
 	);
 };
