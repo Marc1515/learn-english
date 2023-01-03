@@ -18,9 +18,15 @@ const Footer = () => {
 				</p>
 			</div>
 			<div className='center-footer'>
-				<InstagramIcon />
-				<LinkedInIcon />
-				<TwitterIcon />
+				<a href='https://www.instagram.com/marc_espp/'>
+					<InstagramIcon />
+				</a>
+				<a href='https://www.linkedin.com/in/marc-espa%C3%B1a-833924141/'>
+					<LinkedInIcon />
+				</a>
+				<a href='https://twitter.com/MaarcEsp15'>
+					<TwitterIcon />
+				</a>
 			</div>
 			<div className='right-footer'>
 				<span>Marc España Quinquilla</span>
