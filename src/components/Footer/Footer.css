@@ -35,21 +35,20 @@
         
     }
 
-    .center-footer :nth-child(1) {
+    .center-footer a {
         color: aliceblue;
-        font-size: xx-large;
     }
-    .center-footer :nth-child(2) {
-        font-size: xx-large;
-    }
-    .center-footer :nth-child(3) {
+
+    .center-footer a  :nth-child(1){
         font-size: xx-large;
     }
 
     .right-footer {
         display: flex;
         flex-direction: column;
+        text-align: center;
         align-items: center;
+        justify-content: center;
         padding-left: 2rem;
         padding-right: 2rem;
         padding-bottom: 2rem;

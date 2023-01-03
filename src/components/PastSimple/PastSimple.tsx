@@ -13,7 +13,7 @@ import estructureImg from '../../assets/pastSimpleEstructure.png';
 const PastSimple = () => {
 	return (
 		<>
-			<div className='container-PresentSimple'>
+			<div className='container-PastSimple'>
 				{/* Titulo de la página */}
 				<Typography variant='h2' component='h1' gutterBottom>
 					Past Simple
@@ -42,124 +42,210 @@ const PastSimple = () => {
 					}}
 					src={estructureImg}
 				/>
-				{/* Reglas Gramaticales */}
-				<ReglasGramaticalesPresentSimple />
-				{/* Estructura */}
-				<EstructuraPresentSimple />
-				{/* Adverbios */}
-				<AdverbiosPresentSimple />
-
-				<Typography mt={3} variant='body1' paragraph>
-					El pasado simple se utiliza para hablar de una acción concreta que
-					comenzó y acabó en el pasado. En este caso equivale al pretérito
-					indefinido español. Generalmente, lo usamos con adverbios de tiempo
-					como “last year”, “yesterday”, “last night”…
-				</Typography>
-
-				<div className='adverbs-container'>
-					<Typography variant='body1' paragraph>
-						Tom stayed at home last night.
-					</Typography>
-					<Typography variant='body1' paragraph>
-						Tom se quedó en casa anoche.
-					</Typography>
-					<Typography variant='body1' paragraph>
-						Kate worked last Saturday.
-					</Typography>
-					<Typography variant='body1' paragraph>
-						Kate trabajó el sábado pasado.
-					</Typography>
-					<Typography variant='body1' paragraph>
-						I didn't go to the party yesterday.
-					</Typography>
-					<Typography variant='body1' paragraph>
-						No fui a la fiesta ayer.
-					</Typography>
-					<Typography variant='body1' paragraph>
-						Did they walk to school this morning?
-					</Typography>
-					<Typography variant='body1' paragraph>
-						¿Han andado a la escuela esta mañana?
-					</Typography>
-				</div>
-				<Typography variant='body1' paragraph>
-					Se usa el pasado simple para un serie de acciones en el pasado.
-				</Typography>
-
-				<div className='adverbs-container'>
-					<Typography variant='body1' paragraph>
-						I received the good news and immediately called my husband.
-					</Typography>
-					<Typography variant='body1' paragraph>
-						Recibí la buena noticia y llamé de inmediato a mi marido.
-					</Typography>
-					<Typography variant='body1' paragraph>
-						He studied for an hour in the morning, worked all afternoon and
-						didn't return home until 10 at night.
-					</Typography>
-					<Typography variant='body1' paragraph>
-						Estudió durante una hora por la mañana, trabajó toda la tarde y no
-						regresó a casa hasta las 10 de la noche.
-					</Typography>
-				</div>
-				<Typography variant='body1' paragraph>
-					También lo usamos para acciones repetidas o habituales en el pasado,
-					como se usa el pretérito imperfecto español.
-				</Typography>
-
-				<div className='adverbs-container'>
-					<Typography variant='body1' paragraph>
-						We always traveled to Cancun for vacation when we were young
-					</Typography>
-					<Typography variant='body1' paragraph>
-						Siempre viajábamos a Cancun durante las vacaciones cuando éramos
-						jóvenes.
-					</Typography>
-					<Typography variant='body1' paragraph>
-						He walked 5 kilometers every day to work.
-					</Typography>
-					<Typography variant='body1' paragraph>
-						Caminaba 5 kilómetros hasta el trabajo cada día.
-					</Typography>
+				<div className='section1-container'>
+					{/* Reglas Gramaticales */}
+					<ReglasGramaticalesPresentSimple />
+					{/* Estructura */}
+					<EstructuraPresentSimple />
+					{/* Adverbios */}
+					<AdverbiosPresentSimple />
 				</div>
 
-				<Typography variant='body1' paragraph>
-					Lo usamos para narraciones o acciones de períodos de largo tiempo en
-					el pasado, como el pretérito imperfecto español.
-				</Typography>
+				<div className='sentenceTranslated-container'>
+					<div className='sentenceTranslated-container-first'>
+						<Typography mt={3} variant='body1' paragraph>
+							El pasado simple se utiliza para hablar de una acción concreta que
+							comenzó y acabó en el pasado. En este caso equivale al pretérito
+							indefinido español. Generalmente, lo usamos con adverbios de
+							tiempo como “last year”, “yesterday”, “last night”…
+						</Typography>
 
-				<div className='adverbs-container'>
-					<Typography variant='body1' paragraph>
-						I worked for many years in a museum.
-					</Typography>
-					<Typography variant='body1' paragraph>
-						Trabajaba en un museo durante muchos años.
-					</Typography>
-					<Typography variant='body1' paragraph>
-						She didn't eat meat for years.
-					</Typography>
-					<Typography variant='body1' paragraph>
-						No comía carne durante años.
-					</Typography>
-				</div>
+						<ul>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									Tom stayed at home last night.
+								</Typography>
+							</li>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									Tom se quedó en casa anoche.
+								</Typography>
+							</li>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									Kate worked last Saturday.
+								</Typography>
+							</li>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									Kate trabajó el sábado pasado.
+								</Typography>
+							</li>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									I didn't go to the party yesterday.
+								</Typography>
+							</li>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									No fui a la fiesta ayer.
+								</Typography>
+							</li>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									Did they walk to school this morning?
+								</Typography>
+							</li>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									¿Han andado a la escuela esta mañana?
+								</Typography>
+							</li>
+						</ul>
+					</div>
 
-				<Typography variant='body1' paragraph>
-					Se utiliza para hablar de generalidades o hechos del pasado.
-				</Typography>
+					<div className='sentenceTranslated-container-second'>
+						<Typography variant='body1' paragraph>
+							Se usa el pasado simple para un serie de acciones en el pasado.
+						</Typography>
 
-				<div className='adverbs-container'>
-					<Typography variant='body1' paragraph>
-						The Aztec lived in Mexico.
-					</Typography>
-					<Typography variant='body1' paragraph>
-						Los aztecas vivían en México
-					</Typography>
-					<Typography variant='body1' paragraph>
-						I played the guitar when I was a child.
-					</Typography>
-					<Typography variant='body1' paragraph>
-						Tocaba la guitarra cuando era niño.
-					</Typography>
+						<ul>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									I received the good news and immediately called my husband.
+								</Typography>
+							</li>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									Recibí la buena noticia y llamé de inmediato a mi marido.
+								</Typography>
+							</li>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									He studied for an hour in the morning, worked all afternoon
+									and didn't return home until 10 at night.
+								</Typography>
+							</li>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									Estudió durante una hora por la mañana, trabajó toda la tarde
+									y no regresó a casa hasta las 10 de la noche.
+								</Typography>
+							</li>
+						</ul>
+					</div>
+
+					<div className='sentenceTranslated-container-third'>
+						<Typography variant='body1' paragraph>
+							También lo usamos para acciones repetidas o habituales en el
+							pasado, como se usa el pretérito imperfecto español.
+						</Typography>
+						<ul>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									We always traveled to Cancun for vacation when we were young
+								</Typography>
+							</li>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									Siempre viajábamos a Cancun durante las vacaciones cuando
+									éramos jóvenes.
+								</Typography>
+							</li>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									He walked 5 kilometers every day to work.
+								</Typography>
+							</li>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									Caminaba 5 kilómetros hasta el trabajo cada día.
+								</Typography>
+							</li>
+						</ul>
+					</div>
+
+					<div className='sentenceTranslated-container-fourth'>
+						<Typography variant='body1' paragraph>
+							Lo usamos para narraciones o acciones de períodos de largo tiempo
+							en el pasado, como el pretérito imperfecto español.
+						</Typography>
+						<ul>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									I worked for many years in a museum.
+								</Typography>
+							</li>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									Trabajaba en un museo durante muchos años.
+								</Typography>
+							</li>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									She didn't eat meat for years.
+								</Typography>
+							</li>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									No comía carne durante años.
+								</Typography>
+							</li>
+						</ul>
+					</div>
+
+					<div className='sentenceTranslated-container-fifth'>
+						<Typography variant='body1' paragraph>
+							Se utiliza para hablar de generalidades o hechos del pasado.
+						</Typography>
+
+						<ul>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									The Aztec lived in Mexico.
+								</Typography>
+							</li>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									Los aztecas vivían en México
+								</Typography>
+							</li>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									I played the guitar when I was a child.
+								</Typography>
+							</li>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									Tocaba la guitarra cuando era niño.
+								</Typography>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<QuizContextProvider>

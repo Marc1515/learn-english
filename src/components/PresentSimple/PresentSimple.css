@@ -1,16 +1,97 @@
 body {
-    color: black;
+	color: black;
 }
 
 .container-PresentSimple {
-    padding-top: 1.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+	padding: 1.5rem;
+	padding-top: 3rem;
 }
 
-.section1-container{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding-bottom: 1rem;
+.container-PresentSimple :nth-child(2) {
+	padding-right: 1rem;
+}
+
+.section1-container {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding-bottom: 1rem;
+}
+
+.sentenceTranslated-container {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Primer bloque de frases */
+.sentenceTranslated-container-first ul li {
+	list-style: none;
+}
+
+.sentenceTranslated-container-first ul :nth-child(2) :first-child {
+	color: rgb(95, 95, 95);
+	font-style: italic;
+	font-size: small;
+}
+.sentenceTranslated-container-first ul :nth-child(4) :first-child {
+	color: rgb(95, 95, 95);
+	font-style: italic;
+	font-size: small;
+}
+.sentenceTranslated-container-first ul :nth-child(6) :first-child {
+	color: rgb(95, 95, 95);
+	font-style: italic;
+	font-size: small;
+}
+.sentenceTranslated-container-first ul :nth-child(8) :first-child {
+	color: rgb(95, 95, 95);
+	font-style: italic;
+	font-size: small;
+}
+
+/* Segundo bloque de frases */
+.sentenceTranslated-container-second ul li {
+	list-style: none;
+}
+
+.sentenceTranslated-container-second ul :nth-child(2) :first-child {
+	color: rgb(95, 95, 95);
+	font-style: italic;
+	font-size: small;
+}
+.sentenceTranslated-container-second ul :nth-child(4) :first-child {
+	color: rgb(95, 95, 95);
+	font-style: italic;
+	font-size: small;
+}
+.sentenceTranslated-container-second ul :nth-child(6) :first-child {
+	color: rgb(95, 95, 95);
+	font-style: italic;
+	font-size: small;
+}
+
+/* tercer bloque de frases */
+.sentenceTranslated-container-third ul li {
+	list-style: none;
+}
+
+.sentenceTranslated-container-third ul :nth-child(2) :first-child {
+	color: rgb(95, 95, 95);
+	font-style: italic;
+	font-size: small;
+}
+.sentenceTranslated-container-third ul :nth-child(4) :first-child {
+	color: rgb(95, 95, 95);
+	font-style: italic;
+	font-size: small;
+}
+.sentenceTranslated-container-third ul :nth-child(6) :first-child {
+	color: rgb(95, 95, 95);
+	font-style: italic;
+	font-size: small;
+}
+.sentenceTranslated-container-third ul :nth-child(8) :first-child {
+	color: rgb(95, 95, 95);
+	font-style: italic;
+	font-size: small;
 }

@@ -47,90 +47,165 @@ const PresentSimple = () => {
 					{/* Adverbios */}
 					<AdverbiosPresentSimple />
 				</div>
+				<div className='sentenceTranslated-container'>
+					<div className='sentenceTranslated-container-first'>
+						<Typography mt={3} variant='body1' paragraph>
+							Se utiliza para hablar de generalidades o hechos científicos:
+						</Typography>
 
-				<Typography mt={3} variant='body1' paragraph>
-					Se utiliza para hablar de generalidades o hechos científicos:
-				</Typography>
+						<ul>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									He doesn’t/does not eat vegetables
+								</Typography>
+							</li>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									Él no come verduras.
+								</Typography>
+							</li>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									She works in a hospital
+								</Typography>
+							</li>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									Ella trabaja en una hospital.
+								</Typography>
+							</li>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									Elephants live in Africa.
+								</Typography>
+							</li>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									Los elefantes viven en África.
+								</Typography>
+							</li>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									Bogota is in Colombia.
+								</Typography>
+							</li>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									Bogotá está en Colombia.
+								</Typography>
+							</li>
+						</ul>
+					</div>
 
-				<div className='adverbs-container'>
-					<Typography variant='body1' paragraph>
-						He doesn’t/does not eat vegetables
-					</Typography>
-					<Typography variant='body1' paragraph>
-						Él no come verduras.
-					</Typography>
-					<Typography variant='body1' paragraph>
-						She works in a hospital
-					</Typography>
-					<Typography variant='body1' paragraph>
-						Ella trabaja en una hospital.
-					</Typography>
-					<Typography variant='body1' paragraph>
-						Elephants live in Africa.
-					</Typography>
-					<Typography variant='body1' paragraph>
-						Los elefantes viven en África.
-					</Typography>
-					<Typography variant='body1' paragraph>
-						Bogota is in Colombia.
-					</Typography>
-					<Typography variant='body1' paragraph>
-						Bogotá está en Colombia.
-					</Typography>
-				</div>
-				<Typography variant='body1' paragraph>
-					Se usa para eventos programados en el futuro próximo:
-				</Typography>
+					<div className='sentenceTranslated-container-second'>
+						<Typography variant='body1' paragraph>
+							Se usa para eventos programados en el futuro próximo:
+						</Typography>
 
-				<div className='adverbs-container'>
-					<Typography variant='body1' paragraph>
-						The train leaves at 10:00.
-					</Typography>
-					<Typography variant='body1' paragraph>
-						El tren sale a las 10h.
-					</Typography>
-					<Typography variant='body1' paragraph>
-						The party is tonight.
-					</Typography>
-					<Typography variant='body1' paragraph>
-						La fiesta es esta noche.
-					</Typography>
-					<Typography variant='body1' paragraph>
-						Does the festival start tomorrow?
-					</Typography>
-					<Typography variant='body1' paragraph>
-						¿Empieza el festival mañana?
-					</Typography>
-				</div>
-				<Typography variant='body1' paragraph>
-					Se usa para instrucciones (el imperativo).
-				</Typography>
+						<ul>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									The train leaves at 10:00.
+								</Typography>
+							</li>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									El tren sale a las 10h.
+								</Typography>
+							</li>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									The party is tonight.
+								</Typography>
+							</li>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									La fiesta es esta noche.
+								</Typography>
+							</li>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									Does the festival start tomorrow?
+								</Typography>
+							</li>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									¿Empieza el festival mañana?
+								</Typography>
+							</li>
+						</ul>
+					</div>
 
-				<div className='adverbs-container'>
-					<Typography variant='body1' paragraph>
-						Open the window.
-					</Typography>
-					<Typography variant='body1' paragraph>
-						Abre la ventana.
-					</Typography>
-					<Typography variant='body1' paragraph>
-						Eat the vegetables.
-					</Typography>
-					<Typography variant='body1' paragraph>
-						Come las verduras.
-					</Typography>
-					<Typography variant='body1' paragraph>
-						Don’t cry.
-					</Typography>
-					<Typography variant='body1' paragraph>
-						No llores.
-					</Typography>
-					<Typography variant='body1' paragraph>
-						Do your homework.
-					</Typography>
-					<Typography variant='body1' paragraph>
-						Haz los deberes.
-					</Typography>
+					<div className='sentenceTranslated-container-third'>
+						<Typography variant='body1' paragraph>
+							Se usa para instrucciones (el imperativo).
+						</Typography>
+
+						<ul>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									Open the window.
+								</Typography>
+							</li>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									Abre la ventana.
+								</Typography>
+							</li>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									Eat the vegetables.
+								</Typography>
+							</li>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									Come las verduras.
+								</Typography>
+							</li>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									Don’t cry.
+								</Typography>
+							</li>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									No llores.
+								</Typography>
+							</li>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									Do your homework.
+								</Typography>
+							</li>
+							<li>
+								{' '}
+								<Typography variant='body1' paragraph>
+									Haz los deberes.
+								</Typography>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<QuizContextProvider>
