@@ -14,6 +14,7 @@ import {
 	Paper,
 	Box,
 } from '@mui/material';
+import estructureImg from '../../../assets/presentSimpleEstructure.png';
 
 const ReglasGramaticalesPresentSimple = () => {
 	function createData(subject: string, conjugation: string) {
@@ -21,13 +22,13 @@ const ReglasGramaticalesPresentSimple = () => {
 	}
 
 	const rows = [
-		createData('I', 'talk'),
-		createData('You', 'eat'),
-		createData('We', 'learn'),
-		createData('They', 'do'),
-		createData('He', 'talks'),
-		createData('she', 'eats'),
-		createData('It', 'does'),
+		createData('I', 'wanted'),
+		createData('You', 'learned'),
+		createData('We', 'were'),
+		createData('They', 'stayed'),
+		createData('He', 'was'),
+		createData('she', 'showed'),
+		createData('It', 'did'),
 	];
 	return (
 		<>
@@ -43,9 +44,9 @@ const ReglasGramaticalesPresentSimple = () => {
 				</AccordionSummary>
 				<AccordionDetails>
 					<Typography variant='body1' paragraph>
-						Para conjugar el presente simple usamos el infinitivo para los
-						sujetos “I”, “you”, “we” y “they” y para las terceras personas “he”,
-						“she” y “it”, añadimos una “-s” al final del verbo.
+						Para formar el pasado simple con verbos regulares, usamos el
+						infinitivo y añadimos la terminación “-ed”. La forma es la misma
+						para todas las personas (I, you, he, she, it, we, they).
 					</Typography>
 					<TableContainer component={Paper}>
 						<Table aria-label='simple table'>

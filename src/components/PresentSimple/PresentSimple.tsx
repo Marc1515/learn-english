@@ -2,6 +2,8 @@ import React from 'react';
 import QuizPresentSimple from './QuizPresentSimple/QuizPresentSimple';
 import './PresentSimple.css';
 import Typography from '@mui/material/Typography';
+import { Box } from '@mui/material';
+import estructureImg from '../../assets/presentSimpleEstructure.png';
 
 import ReglasGramaticalesPresentSimple from './ReglasGramaticalesPresentSimple/ReglasGramaticalesPresentSimple';
 import EstructuraPresentSimple from './EstructuraPresentSimple/EstructuraPresentSimple';
@@ -23,12 +25,28 @@ const PresentSimple = () => {
 					esta lección, como en las demás lecciones sobre los tiempos verbales,
 					miraremos su estructura y uso.
 				</Typography>
-				{/* Reglas Gramaticales */}
-				<ReglasGramaticalesPresentSimple />
-				{/* Estructura */}
-				<EstructuraPresentSimple />
-				{/* Adverbios */}
-				<AdverbiosPresentSimple />
+				<Typography variant='h4' component='h2' gutterBottom>
+					Reglas Gramaticales
+				</Typography>
+				<Box
+					component='img'
+					gap={1}
+					mt={2}
+					mb={4}
+					sx={{
+						width: '100%',
+						height: '100%',
+					}}
+					src={estructureImg}
+				/>
+				<div className='section1-container'>
+					{/* Reglas Gramaticales */}
+					<ReglasGramaticalesPresentSimple />
+					{/* Estructura */}
+					<EstructuraPresentSimple />
+					{/* Adverbios */}
+					<AdverbiosPresentSimple />
+				</div>
 
 				<Typography mt={3} variant='body1' paragraph>
 					Se utiliza para hablar de generalidades o hechos científicos:

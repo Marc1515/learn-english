@@ -7,10 +7,3 @@ body {
     padding-left: 1rem;
     padding-right: 1rem;
 }
-
-.section1-container{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding-bottom: 1rem;
-}
