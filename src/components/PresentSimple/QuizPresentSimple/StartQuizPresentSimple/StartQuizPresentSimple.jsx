@@ -8,6 +8,9 @@ const StartQuizPresentSimple = () => {
 		setPuntuacion,
 		setIsStarted,
 		setAreDisabled,
+		newElements,
+		setNewArray,
+		setAllQuestions,
 	} = useContext(QuizContext);
 
 	return (
@@ -21,6 +24,8 @@ const StartQuizPresentSimple = () => {
 						setPuntuacion(0);
 						setIsStarted(false);
 						setAreDisabled(false);
+						setNewArray(newElements());
+						setAllQuestions(true);
 					}}
 				>
 					{' '}

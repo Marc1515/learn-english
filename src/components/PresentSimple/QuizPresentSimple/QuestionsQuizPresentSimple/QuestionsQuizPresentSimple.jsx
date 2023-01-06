@@ -1,6 +1,6 @@
+/* eslint-disable prefer-const */
 import { useContext, useEffect } from 'react';
 import { QuizContext } from '../../../../contexts/quizContext';
-import preguntas from '../preguntas';
 
 const QuestionsQuizPresentSimple = () => {
 	const {
@@ -13,6 +13,8 @@ const QuestionsQuizPresentSimple = () => {
 		areDisabled,
 		setAreDisabled,
 		setIsFinished,
+		newArray,
+		setAllQuestions,
 	} = useContext(QuizContext);
 
 	const handleAnswerSubmit = (isCorrect, e) => {
@@ -27,12 +29,24 @@ const QuestionsQuizPresentSimple = () => {
 
 		setTimeout(() => {
 			// Cambiar a la siguiente pregunta
-			if (preguntaActual === preguntas.length - 1) {
+			if (preguntaActual === newArray.length - 1) {
 				setIsFinished(true);
 			} else {
 				setPreguntaActual(preguntaActual + 1);
+				console.log(newArray.length);
 			}
 		}, 1000);
+	};
+
+	const handleLastQuestion = () => {
+		if (preguntaActual === 4) {
+			setIsFinished(true);
+			setAllQuestions(false);
+		} else {
+			setTiempoRestante(20);
+			setAreDisabled(false);
+			setPreguntaActual(preguntaActual + 1);
+		}
 	};
 
 	useEffect(() => {
@@ -43,46 +57,42 @@ const QuestionsQuizPresentSimple = () => {
 		return () => clearInterval(intervalo);
 	}, [tiempoRestante]);
 
-	return (
-		<main className='main-container'>
-			<div className='lado-izquierdo'>
-				<div className='numero-pregunta'>
-					<span> Pregunta {preguntaActual + 1}</span> de {preguntas.length}
+	if (preguntaActual < 4) {
+		return (
+			<main className='main-container'>
+				<div className='lado-izquierdo'>
+					<div className='numero-pregunta'>
+						<span> Pregunta {preguntaActual + 1}</span> de {newArray.length}
+					</div>
+					<div className='titulo-pregunta'>
+						{newArray[preguntaActual].titulo}
+					</div>
+					<div>
+						{!areDisabled ? (
+							<span className='tiempo-restante'>
+								Tiempo restante: {tiempoRestante}{' '}
+							</span>
+						) : (
+							<button onClick={() => handleLastQuestion()}>Continuar</button>
+						)}
+					</div>
 				</div>
-				<div className='titulo-pregunta'>
-					{preguntas[preguntaActual].titulo}
-				</div>
-				<div>
-					{!areDisabled ? (
-						<span className='tiempo-restante'>
-							Tiempo restante: {tiempoRestante}{' '}
-						</span>
-					) : (
+				<div className='lado-derecho'>
+					{newArray[preguntaActual].opciones.map((respuesta) => (
 						<button
-							onClick={() => {
-								setTiempoRestante(20);
-								setAreDisabled(false);
-								setPreguntaActual(preguntaActual + 1);
-							}}
+							disabled={areDisabled}
+							key={respuesta.id}
+							onClick={(e) => handleAnswerSubmit(respuesta.isCorrect, e)}
 						>
-							Continuar
+							{respuesta.textoRespuesta}
 						</button>
-					)}
+					))}
 				</div>
-			</div>
-			<div className='lado-derecho'>
-				{preguntas[preguntaActual].opciones.map((respuesta) => (
-					<button
-						disabled={areDisabled}
-						key={respuesta.id}
-						onClick={(e) => handleAnswerSubmit(respuesta.isCorrect, e)}
-					>
-						{respuesta.textoRespuesta}
-					</button>
-				))}
-			</div>
-		</main>
-	);
+			</main>
+		);
+	} else {
+		setIsFinished(true);
+	}
 };
 
 export default QuestionsQuizPresentSimple;

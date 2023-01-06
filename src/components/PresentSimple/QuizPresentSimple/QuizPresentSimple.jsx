@@ -7,7 +7,8 @@ import AnswersQuizPresentSimple from './AnswersQuizPresentSimple/AnswersQuizPres
 import { QuizContext } from '../../../contexts/quizContext';
 
 function QuizPresentSimple() {
-	const { isFinished, answerShow, isStarted } = useContext(QuizContext);
+	const { isFinished, answerShow, isStarted, allQuestions } =
+		useContext(QuizContext);
 
 	/* En el caso de que el juego haya terminado */
 	if (isFinished) return <FinishQuizPresentSimple />;
@@ -15,9 +16,8 @@ function QuizPresentSimple() {
 	if (answerShow) return <AnswersQuizPresentSimple />;
 	/* En el caso que el juego esté por empezar */
 	if (isStarted) return <StartQuizPresentSimple />;
-
 	/* Las preguntas del Quiz */
-	return <QuestionsQuizPresentSimple />;
+	if (allQuestions) return <QuestionsQuizPresentSimple />;
 }
 
 export default QuizPresentSimple;
