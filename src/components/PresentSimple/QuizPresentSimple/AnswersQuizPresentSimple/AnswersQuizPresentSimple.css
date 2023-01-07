@@ -1,0 +1,16 @@
+.unShowCounter {
+	display: none;
+}
+
+.green {
+	color: green;
+}
+
+.red {
+	color: red;
+}
+
+.box {
+	display: flex;
+	justify-content: space-between;
+}

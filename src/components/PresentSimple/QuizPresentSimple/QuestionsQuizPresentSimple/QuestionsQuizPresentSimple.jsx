@@ -15,9 +15,22 @@ const QuestionsQuizPresentSimple = () => {
 		setIsFinished,
 		newArray,
 		setAllQuestions,
+		userAnswers,
+		colorAnswer,
 	} = useContext(QuizContext);
 
-	const handleAnswerSubmit = (isCorrect, e) => {
+	const handleClick = (e) => {
+		console.log(e);
+		e.preventDefault();
+		setAreDisabled(true);
+		setTimeout(() => {
+			setAreDisabled(false);
+		}, 1600);
+	};
+	const handleAnswerSubmit = (isCorrect, e, textoRespuesta) => {
+		userAnswers.push(textoRespuesta);
+		colorAnswer.push(isCorrect);
+
 		// Añadir puntuación
 		if (isCorrect) setPuntuacion(puntuacion + 1);
 		// Añadir estilos de pregunta
@@ -33,11 +46,9 @@ const QuestionsQuizPresentSimple = () => {
 				setIsFinished(true);
 			} else {
 				setPreguntaActual(preguntaActual + 1);
-				console.log(newArray.length);
 			}
 		}, 1000);
 	};
-
 	const handleLastQuestion = () => {
 		if (preguntaActual === 4) {
 			setIsFinished(true);
@@ -82,7 +93,14 @@ const QuestionsQuizPresentSimple = () => {
 						<button
 							disabled={areDisabled}
 							key={respuesta.id}
-							onClick={(e) => handleAnswerSubmit(respuesta.isCorrect, e)}
+							onClick={(e) => [
+								handleAnswerSubmit(
+									respuesta.isCorrect,
+									e,
+									respuesta.textoRespuesta
+								),
+								handleClick(e),
+							]}
 						>
 							{respuesta.textoRespuesta}
 						</button>

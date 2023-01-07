@@ -11,6 +11,8 @@ const StartQuizPresentSimple = () => {
 		newElements,
 		setNewArray,
 		setAllQuestions,
+		setUserAnswers,
+		setColorAnswer,
 	} = useContext(QuizContext);
 
 	return (
@@ -26,6 +28,8 @@ const StartQuizPresentSimple = () => {
 						setAreDisabled(false);
 						setNewArray(newElements());
 						setAllQuestions(true);
+						setUserAnswers([]);
+						setColorAnswer([]);
 					}}
 				>
 					{' '}

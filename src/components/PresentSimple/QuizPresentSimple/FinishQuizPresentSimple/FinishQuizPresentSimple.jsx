@@ -1,6 +1,5 @@
 import { useContext } from 'react';
 import { QuizContext } from '../../../../contexts/quizContext';
-import preguntas from '../preguntas';
 
 const FinishQuizPresentSimple = () => {
 	const {
@@ -9,6 +8,7 @@ const FinishQuizPresentSimple = () => {
 		setAnswerShow,
 		setIsStarted,
 		setIsFinished,
+		newArray,
 	} = useContext(QuizContext);
 
 	return (
@@ -16,7 +16,7 @@ const FinishQuizPresentSimple = () => {
 			<div className='juego-terminado'>
 				<span>
 					{' '}
-					Total {puntuacion} de {preguntas.length}{' '}
+					Total {puntuacion} de {newArray.length}{' '}
 				</span>
 				<button
 					className='btn-one'
