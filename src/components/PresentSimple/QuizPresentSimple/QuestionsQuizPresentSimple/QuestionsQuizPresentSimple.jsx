@@ -60,6 +60,12 @@ const QuestionsQuizPresentSimple = () => {
 			setPreguntaActual(preguntaActual + 1);
 		}
 	};
+	useEffect(() => {
+		if (tiempoRestante === 0) {
+			userAnswers.push('---');
+			colorAnswer.push(false);
+		}
+	}, [tiempoRestante]);
 
 	useEffect(() => {
 		const intervalo = setInterval(() => {
