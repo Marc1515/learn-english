@@ -1,8 +1,9 @@
 /* eslint-disable prefer-const */
-import { useContext, useEffect } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { QuizContext } from '../../../../contexts/quizContext';
 
 const QuestionsQuizPresentSimple = () => {
+	const [answeDisabled, setAnsweDisabled] = useState(false);
 	const {
 		preguntaActual,
 		setPreguntaActual,
@@ -19,15 +20,8 @@ const QuestionsQuizPresentSimple = () => {
 		colorAnswer,
 	} = useContext(QuizContext);
 
-	const handleClick = (e) => {
-		console.log(e);
-		e.preventDefault();
-		setAreDisabled(true);
-		setTimeout(() => {
-			setAreDisabled(false);
-		}, 1600);
-	};
 	const handleAnswerSubmit = (isCorrect, e, textoRespuesta) => {
+		e.preventDefault();
 		userAnswers.push(textoRespuesta);
 		colorAnswer.push(isCorrect);
 
@@ -35,6 +29,12 @@ const QuestionsQuizPresentSimple = () => {
 		if (isCorrect) setPuntuacion(puntuacion + 1);
 		// Añadir estilos de pregunta
 		e.target.classList.add(isCorrect ? 'correct' : 'incorrect');
+
+		setAnsweDisabled(true);
+
+		setTimeout(() => {
+			setAnsweDisabled(false);
+		}, 1600);
 
 		setTimeout(() => {
 			setTiempoRestante(20);
@@ -49,6 +49,7 @@ const QuestionsQuizPresentSimple = () => {
 			}
 		}, 1000);
 	};
+
 	const handleLastQuestion = () => {
 		if (preguntaActual === 4) {
 			setIsFinished(true);
@@ -91,7 +92,7 @@ const QuestionsQuizPresentSimple = () => {
 				<div className='lado-derecho'>
 					{newArray[preguntaActual].opciones.map((respuesta) => (
 						<button
-							disabled={areDisabled}
+							disabled={areDisabled || answeDisabled}
 							key={respuesta.id}
 							onClick={(e) => [
 								handleAnswerSubmit(
@@ -99,7 +100,6 @@ const QuestionsQuizPresentSimple = () => {
 									e,
 									respuesta.textoRespuesta
 								),
-								handleClick(e),
 							]}
 						>
 							{respuesta.textoRespuesta}
