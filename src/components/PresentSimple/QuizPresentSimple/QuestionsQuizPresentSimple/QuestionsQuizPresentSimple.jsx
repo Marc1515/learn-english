@@ -34,7 +34,7 @@ const QuestionsQuizPresentSimple = () => {
 
 		setTimeout(() => {
 			setAnsweDisabled(false);
-		}, 1600);
+		}, 2000);
 
 		setTimeout(() => {
 			setTiempoRestante(20);
@@ -85,15 +85,6 @@ const QuestionsQuizPresentSimple = () => {
 					<div className='titulo-pregunta'>
 						{newArray[preguntaActual].titulo}
 					</div>
-					<div>
-						{!areDisabled ? (
-							<span className='tiempo-restante'>
-								Tiempo restante: {tiempoRestante}{' '}
-							</span>
-						) : (
-							<button onClick={() => handleLastQuestion()}>Continuar</button>
-						)}
-					</div>
 				</div>
 				<div className='lado-derecho'>
 					{newArray[preguntaActual].opciones.map((respuesta) => (
@@ -111,6 +102,20 @@ const QuestionsQuizPresentSimple = () => {
 							{respuesta.textoRespuesta}
 						</button>
 					))}
+				</div>
+				<div className='container-tiempo-restante'>
+					{!areDisabled ? (
+						<span className='tiempo-restante'>
+							Tiempo restante: {tiempoRestante}{' '}
+						</span>
+					) : (
+						<button
+							className='continuar-tiempo'
+							onClick={() => handleLastQuestion()}
+						>
+							Continuar
+						</button>
+					)}
 				</div>
 			</main>
 		);

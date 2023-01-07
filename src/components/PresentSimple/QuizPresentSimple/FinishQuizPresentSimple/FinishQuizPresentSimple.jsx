@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import { QuizContext } from '../../../../contexts/quizContext';
+import RestartAltIcon from '@mui/icons-material/RestartAlt';
 
 const FinishQuizPresentSimple = () => {
 	const {
@@ -19,24 +20,24 @@ const FinishQuizPresentSimple = () => {
 					Total {puntuacion} de {newArray.length}{' '}
 				</span>
 				<button
-					className='btn-one'
-					onClick={() => {
-						setIsFinished(false);
-						setIsStarted(true);
-					}}
-				>
-					{' '}
-					Volver a jugar
-				</button>
-				<button
-					className='btn-one'
+					className='btn-respuestas'
 					onClick={() => {
 						setIsFinished(false);
 						setAnswerShow(true);
 						setPreguntaActual(0);
 					}}
 				>
-					Ver respuestas
+					RESPUESTAS
+				</button>
+				<button
+					className='btn-reset'
+					onClick={() => {
+						setIsFinished(false);
+						setIsStarted(true);
+					}}
+				>
+					{' '}
+					<RestartAltIcon />
 				</button>
 			</div>
 		</main>

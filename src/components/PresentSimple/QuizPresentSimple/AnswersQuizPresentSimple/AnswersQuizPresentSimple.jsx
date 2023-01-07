@@ -1,6 +1,7 @@
 /* eslint-disable prefer-const */
 import { useContext } from 'react';
 import { QuizContext } from '../../../../contexts/quizContext';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import './AnswersQuizPresentSimple.css';
 
 const AnswersQuizPresentSimple = () => {
@@ -16,6 +17,15 @@ const AnswersQuizPresentSimple = () => {
 	return (
 		<main className='main-container'>
 			<div className='lado-izquierdo'>
+				<button
+					className='backToFinishView'
+					onClick={() => {
+						setAnswerShow(false);
+						setIsFinished(true);
+					}}
+				>
+					<ArrowBackIosIcon />
+				</button>
 				{newArray.map((pregunta, i) => (
 					<div key={pregunta.titulo}>
 						<span>Pregunta {i + 1}</span>
@@ -35,15 +45,6 @@ const AnswersQuizPresentSimple = () => {
 						<hr />
 					</div>
 				))}
-				<button
-					onClick={() => {
-						setIsFinished(false);
-						setIsStarted(true);
-						setAnswerShow(false);
-					}}
-				>
-					Volver a jugar
-				</button>
 			</div>
 		</main>
 	);

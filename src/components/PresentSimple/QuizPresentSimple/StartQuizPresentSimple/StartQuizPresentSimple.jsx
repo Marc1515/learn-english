@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import { QuizContext } from '../../../../contexts/quizContext';
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 
 const StartQuizPresentSimple = () => {
 	const {
@@ -17,24 +18,33 @@ const StartQuizPresentSimple = () => {
 
 	return (
 		<main className='main-container'>
+			<div className='empezar-titulo'>
+				<span>Present Simple</span>
+				<span>Quiz</span>
+				<span>
+					Realiza un Quiz rápido de poco más de un minuto para poner a prueba
+					tus conocimientos
+				</span>
+			</div>
 			<div className='empezar-container'>
-				<button
-					className='btn-one'
-					onClick={() => {
-						setTiempoRestante(20);
-						setPreguntaActual(0);
-						setPuntuacion(0);
-						setIsStarted(false);
-						setAreDisabled(false);
-						setNewArray(newElements());
-						setAllQuestions(true);
-						setUserAnswers([]);
-						setColorAnswer([]);
-					}}
-				>
-					{' '}
-					Empezar a jugar
-				</button>
+				<div className='btn-one'>
+					<button
+						onClick={() => {
+							setTiempoRestante(20);
+							setPreguntaActual(0);
+							setPuntuacion(0);
+							setIsStarted(false);
+							setAreDisabled(false);
+							setNewArray(newElements());
+							setAllQuestions(true);
+							setUserAnswers([]);
+							setColorAnswer([]);
+						}}
+					>
+						{' '}
+						<PlayArrowIcon />
+					</button>
+				</div>
 			</div>
 		</main>
 	);
