@@ -38,6 +38,7 @@
 
 .titulo-pregunta {
 	font-size: larger;
+	height: 4rem;
 }
 
 .lado-derecho {
@@ -131,16 +132,18 @@ button {
 	font-size: xxx-large;
 }
 
+.container-tiempo-restante {
+	height: 2rem;
+	display: flex;
+	justify-content: start;
+	align-items: flex-end;
+}
+
 .tiempo-restante {
 	font-size: 14px;
 	color: #3f72af !important;
-	margin-bottom: 20px;
-}
-
-.container-tiempo-restante {
-	height: 33px;
-	display: flex;
-	justify-content: end;
+	margin-bottom: 0 !important;
+	font-size: xx-large !important;
 }
 
 .correct,

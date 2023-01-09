@@ -105,9 +105,7 @@ const QuestionsQuizPresentSimple = () => {
 				</div>
 				<div className='container-tiempo-restante'>
 					{!areDisabled ? (
-						<span className='tiempo-restante'>
-							Tiempo restante: {tiempoRestante}{' '}
-						</span>
+						<span className='tiempo-restante'>{tiempoRestante} </span>
 					) : (
 						<button
 							className='continuar-tiempo'
