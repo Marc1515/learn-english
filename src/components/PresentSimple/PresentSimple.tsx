@@ -15,7 +15,12 @@ const PresentSimple = () => {
 		<>
 			<div className='container-PresentSimple'>
 				{/* Titulo de la página */}
-				<Typography variant='h2' component='h1' gutterBottom>
+				<Typography
+					className='presentSimple-title'
+					variant='h2'
+					component='h1'
+					gutterBottom
+				>
 					Present Simple
 				</Typography>
 				{/* Descripción del Present Simple */}

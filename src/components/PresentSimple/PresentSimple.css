@@ -2,13 +2,14 @@ body {
 	color: black;
 }
 
+.presentSimple-title {
+	padding-top: 5rem;
+	font-size: xxx-large !important;
+}
+
 .container-PresentSimple {
 	padding: 1.5rem;
 	padding-top: 3rem;
-}
-
-.container-PresentSimple :first-child {
-	padding-top: 5rem;
 }
 
 .container-PresentSimple :nth-child(2) {
