@@ -42,16 +42,19 @@ const NavBar = () => {
 export default NavBar;
 
 const NavContainer = styled.nav`
-	.container-navbar {
-		z-index: 5;
-	}
-
 	padding: 0.4rem;
+	position: fixed;
 	background-color: #333;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	width: 100%;
+	z-index: 5;
 
+	.container-navbar {
+		z-index: 5;
+		padding-left: 1rem;
+	}
 	h2 {
 		color: white;
 		font-weight: 400;
@@ -97,7 +100,7 @@ const NavContainer = styled.nav`
 		position: absolute;
 		margin-left: auto;
 		margin-right: auto;
-		top: 15%;
+		top: 7rem;
 		left: 0;
 		right: 0;
 		text-align: center;
@@ -109,6 +112,7 @@ const NavContainer = styled.nav`
 	}
 	.burguer {
 		z-index: 5;
+		padding-right: 1rem;
 		@media (min-width: 768px) {
 			display: none;
 		}
@@ -116,8 +120,8 @@ const NavContainer = styled.nav`
 `;
 
 const BgDiv = styled.div`
+	position: fixed;
 	background-color: #222;
-	position: absolute;
 	top: -1000px;
 	left: -1000px;
 	width: 100%;
@@ -126,6 +130,7 @@ const BgDiv = styled.div`
 	transition: all 0.6s ease;
 
 	&.active {
+		position: fixed;
 		z-index: 1;
 		border-radius: 0 0 80% 0;
 		top: 0;
