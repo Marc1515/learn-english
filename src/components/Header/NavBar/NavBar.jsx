@@ -65,7 +65,6 @@ const NavContainer = styled.nav`
 
 	a {
 		color: white;
-		text-decoration: none;
 		margin-right: 1rem;
 	}
 	.links {

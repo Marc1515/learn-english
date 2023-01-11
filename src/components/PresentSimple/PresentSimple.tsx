@@ -24,13 +24,22 @@ const PresentSimple = () => {
 					Present Simple
 				</Typography>
 				{/* Descripción del Present Simple */}
-				<Typography variant='body1' paragraph>
+				<Typography
+					className='presentSimple-introduction'
+					variant='body1'
+					paragraph
+				>
 					Cuando hablamos de los diferentes tiempos verbales, tenemos que hablar
 					de cómo formar el tenso, así como cuando lo usamos. Por lo tanto, en
 					esta lección, como en las demás lecciones sobre los tiempos verbales,
 					miraremos su estructura y uso.
 				</Typography>
-				<Typography variant='h5' component='h2' gutterBottom>
+				<Typography
+					className='titulo-reglasGramaticales'
+					variant='h5'
+					component='h2'
+					gutterBottom
+				>
 					Reglas Gramaticales
 				</Typography>
 				<Box
@@ -40,7 +49,6 @@ const PresentSimple = () => {
 					mb={4}
 					sx={{
 						width: '100%',
-						height: '100%',
 					}}
 					src={estructureImg}
 				/>

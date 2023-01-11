@@ -1,15 +1,20 @@
-body {
-	color: black;
+/* El contenedor principal que contiene toda la página */
+.container-PresentSimple {
+	padding: 1.5rem;
+	padding-top: 6.5rem;
 }
 
 .presentSimple-title {
-	padding-top: 5rem;
-	font-size: xxx-large !important;
+	font-size: 2.5em !important;
 }
 
-.container-PresentSimple {
-	padding: 1.5rem;
-	padding-top: 3rem;
+.presentSimple-introduction {
+	padding-bottom: 2rem;
+}
+
+.titulo-reglasGramaticales {
+	font-size: 1.8em !important;
+	padding-bottom: 1em;
 }
 
 .section1-container {
@@ -27,6 +32,7 @@ body {
 /* Primer bloque de frases */
 .sentenceTranslated-container-first ul li {
 	list-style: none;
+	padding-left: 1.5em;
 }
 
 .sentenceTranslated-container-first ul :nth-child(2) :first-child {
@@ -53,6 +59,7 @@ body {
 /* Segundo bloque de frases */
 .sentenceTranslated-container-second ul li {
 	list-style: none;
+	padding-left: 1.5em;
 }
 
 .sentenceTranslated-container-second ul :nth-child(2) :first-child {
@@ -74,6 +81,7 @@ body {
 /* tercer bloque de frases */
 .sentenceTranslated-container-third ul li {
 	list-style: none;
+	padding-left: 1.5em;
 }
 
 .sentenceTranslated-container-third ul :nth-child(2) :first-child {
