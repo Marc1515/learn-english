@@ -42,23 +42,22 @@ const PresentSimple = () => {
 				>
 					Reglas Gramaticales
 				</Typography>
-				<Box
-					component='img'
-					gap={1}
-					mt={2}
-					mb={4}
-					sx={{
-						width: '100%',
-					}}
-					src={estructureImg}
-				/>
-				<div className='section1-container'>
-					{/* Reglas Gramaticales */}
-					<ReglasGramaticalesPresentSimple />
-					{/* Estructura */}
-					<EstructuraPresentSimple />
-					{/* Adverbios */}
-					<AdverbiosPresentSimple />
+				<div className='container-imagen-principal'>
+					<Box
+						className='imagen-principal'
+						component='img'
+						src={estructureImg}
+					/>
+				</div>
+				<div className='section1-container-wrapper'>
+					<div className='section1-container'>
+						{/* Reglas Gramaticales */}
+						<ReglasGramaticalesPresentSimple />
+						{/* Estructura */}
+						<EstructuraPresentSimple />
+						{/* Adverbios */}
+						<AdverbiosPresentSimple />
+					</div>
 				</div>
 				<div className='sentenceTranslated-container'>
 					<div className='sentenceTranslated-container-first'>
@@ -230,9 +229,11 @@ const PresentSimple = () => {
 					realizar el Quiz tantas veces como quieras para mejorar aún más!
 				</Typography>
 			</div>
-			<QuizContextProvider>
-				<QuizPresentSimple />
-			</QuizContextProvider>
+			<div className='quiz-container'>
+				<QuizContextProvider>
+					<QuizPresentSimple />
+				</QuizContextProvider>
+			</div>
 		</>
 	);
 };
