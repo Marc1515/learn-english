@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { createContext, useState } from 'react';
-import allQuestionsData from '../components/PresentSimple/QuizPresentSimple/preguntas';
+import allQuestionsData from '../pages/PresentSimple/QuizPresentSimple/preguntas';
 
 export const QuizContext = createContext();
 

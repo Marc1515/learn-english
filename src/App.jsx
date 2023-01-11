@@ -1,7 +1,7 @@
 import { HashRouter, Routes, Route } from 'react-router-dom';
-import { HomePage } from './components/HomePage/HomePage';
-import { PresentSimple } from './components/PresentSimple/PresentSimple';
-import { PastSimple } from './components/PastSimple/PastSimple';
+import { HomePage } from './pages/HomePage/HomePage';
+import { PresentSimple } from './pages/PresentSimple/PresentSimple';
+import { PastSimple } from './pages/PastSimple/PastSimple';
 import { NotFound } from './components/NotFound/NotFound';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';

@@ -3,23 +3,32 @@ import QuizPresentSimple from './QuizPresentSimple/QuizPresentSimple';
 import './PastSimple.css';
 import Typography from '@mui/material/Typography';
 import { Box } from '@mui/material';
-
-import ReglasGramaticalesPresentSimple from './ReglasGramaticalesPastSimple/ReglasGramaticalesPastSimple';
-import EstructuraPresentSimple from './EstructuraPastSimple/EstructuraPastSimple';
-import AdverbiosPresentSimple from './AdverbiosPastSimple/AdverbiosPastSimple';
-import { QuizContextProvider } from '../../contexts/quizContext';
 import estructureImg from '../../assets/pastSimpleEstructure.png';
+
+import ReglasGramaticalesPresentSimple from './ReglasGramaticalesPresentSimple/ReglasGramaticalesPresentSimple';
+import EstructuraPresentSimple from './EstructuraPresentSimple/EstructuraPresentSimple';
+import AdverbiosPresentSimple from './AdverbiosPresentSimple/AdverbiosPresentSimple';
+import { QuizContextProvider } from '../../contexts/quizContext';
 
 const PastSimple = () => {
 	return (
 		<>
-			<div className='container-PastSimple'>
+			<div className='container-PresentSimple'>
 				{/* Titulo de la página */}
-				<Typography variant='h2' component='h1' gutterBottom>
+				<Typography
+					className='presentSimple-title'
+					variant='h2'
+					component='h1'
+					gutterBottom
+				>
 					Past Simple
 				</Typography>
 				{/* Descripción del Present Simple */}
-				<Typography variant='body1' paragraph>
+				<Typography
+					className='presentSimple-introduction'
+					variant='body1'
+					paragraph
+				>
 					Hay muchas maneras de hablar del pasado en inglés, pero el pasado
 					simple es la forma más común. El pasado simple en inglés es
 					equivalente al pretérito imperfecto y pretérito indefinido del
@@ -28,29 +37,31 @@ const PastSimple = () => {
 					español. En el pasado simple hay verbos regulares y verbos
 					irregulares.
 				</Typography>
-				<Typography variant='h4' component='h2' gutterBottom>
+				<Typography
+					className='titulo-reglasGramaticales'
+					variant='h5'
+					component='h2'
+					gutterBottom
+				>
 					Reglas Gramaticales
 				</Typography>
-				<Box
-					component='img'
-					gap={1}
-					mt={2}
-					mb={4}
-					sx={{
-						width: '100%',
-						height: '100%',
-					}}
-					src={estructureImg}
-				/>
-				<div className='section1-container'>
-					{/* Reglas Gramaticales */}
-					<ReglasGramaticalesPresentSimple />
-					{/* Estructura */}
-					<EstructuraPresentSimple />
-					{/* Adverbios */}
-					<AdverbiosPresentSimple />
+				<div className='container-imagen-principal'>
+					<Box
+						className='imagen-principal'
+						component='img'
+						src={estructureImg}
+					/>
 				</div>
-
+				<div className='section1-container-wrapper'>
+					<div className='section1-container'>
+						{/* Reglas Gramaticales */}
+						<ReglasGramaticalesPresentSimple />
+						{/* Estructura */}
+						<EstructuraPresentSimple />
+						{/* Adverbios */}
+						<AdverbiosPresentSimple />
+					</div>
+				</div>
 				<div className='sentenceTranslated-container'>
 					<div className='sentenceTranslated-container-first'>
 						<Typography mt={3} variant='body1' paragraph>
@@ -247,10 +258,21 @@ const PastSimple = () => {
 						</ul>
 					</div>
 				</div>
+				<Typography
+					py={5}
+					sx={{ fontStyle: 'italic' }}
+					variant='body1'
+					paragraph
+				>
+					¡Ahora que ya sabes las normas básicas del Present Simple, puedes
+					realizar el Quiz tantas veces como quieras para mejorar aún más!
+				</Typography>
 			</div>
-			<QuizContextProvider>
-				<QuizPresentSimple />
-			</QuizContextProvider>
+			<div className='quiz-container'>
+				<QuizContextProvider>
+					<QuizPresentSimple />
+				</QuizContextProvider>
+			</div>
 		</>
 	);
 };

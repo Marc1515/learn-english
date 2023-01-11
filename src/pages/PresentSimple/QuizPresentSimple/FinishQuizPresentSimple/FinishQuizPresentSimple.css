@@ -1,0 +1,23 @@
+.juego-terminado-titulo {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 1rem;
+}
+
+.juego-terminado-titulo button {
+	width: 10rem;
+	height: 4rem;
+}
+
+.juego-terminado-titulo :nth-child(1) {
+	font-size: larger;
+}
+.juego-terminado-titulo :nth-child(3) {
+	font-size: xxx-large;
+}
+
+.juego-terminado-titulo :nth-child(3) :first-child {
+	padding-bottom: 0;
+}

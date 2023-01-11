@@ -14,7 +14,6 @@ import {
 	Paper,
 	Box,
 } from '@mui/material';
-import estructureImg from '../../../assets/presentSimpleEstructure.png';
 
 const ReglasGramaticalesPresentSimple = () => {
 	function createData(subject: string, conjugation: string) {
