@@ -23,7 +23,7 @@ const preguntas = [
 			{ id: 9, textoRespuesta: 'Is', isCorrect: false },
 			{ id: 10, textoRespuesta: 'Did', isCorrect: true },
 			{ id: 11, textoRespuesta: 'Done', isCorrect: false },
-			{ id: 12, textoRespuesta: 'Does', isCorrect: false },
+			{ id: 12, textoRespuesta: 'Do', isCorrect: false },
 		],
 	},
 	{
@@ -92,7 +92,7 @@ const preguntas = [
 	{
 		titulo: '___ she speak Spanish?',
 		opciones: [
-			{ id: 41, textoRespuesta: 'Do', isCorrect: true },
+			{ id: 41, textoRespuesta: 'Do', isCorrect: false },
 			{ id: 42, textoRespuesta: `Don't`, isCorrect: false },
 			{ id: 43, textoRespuesta: 'is', isCorrect: false },
 			{ id: 44, textoRespuesta: 'Does', isCorrect: true },
@@ -177,6 +177,186 @@ const preguntas = [
 			{ id: 78, textoRespuesta: 'not', isCorrect: false },
 			{ id: 79, textoRespuesta: `is`, isCorrect: false },
 			{ id: 80, textoRespuesta: 'eats', isCorrect: false },
+		],
+	},
+	{
+		titulo: 'He ___ hard every day.',
+		opciones: [
+			{ id: 81, textoRespuesta: 'study', isCorrect: false },
+			{ id: 82, textoRespuesta: 'are', isCorrect: false },
+			{ id: 83, textoRespuesta: 'studies', isCorrect: true },
+			{ id: 84, textoRespuesta: 'hard', isCorrect: false },
+		],
+	},
+	{
+		titulo: 'They ___ soccer on weekends.',
+		opciones: [
+			{ id: 85, textoRespuesta: 'play', isCorrect: true },
+			{ id: 86, textoRespuesta: `play's`, isCorrect: false },
+			{ id: 87, textoRespuesta: 'do', isCorrect: false },
+			{ id: 88, textoRespuesta: 'does', isCorrect: false },
+		],
+	},
+	{
+		titulo: 'I ___ ice cream.',
+		opciones: [
+			{ id: 89, textoRespuesta: 'loves', isCorrect: false },
+			{ id: 90, textoRespuesta: `is`, isCorrect: false },
+			{ id: 91, textoRespuesta: 'love', isCorrect: true },
+			{ id: 92, textoRespuesta: 'are', isCorrect: false },
+		],
+	},
+	{
+		titulo: `They ___ play tennis.`,
+		opciones: [
+			{ id: 93, textoRespuesta: 'study', isCorrect: false },
+			{ id: 94, textoRespuesta: 'are', isCorrect: false },
+			{ id: 95, textoRespuesta: `doesn't`, isCorrect: false },
+			{ id: 96, textoRespuesta: `don't`, isCorrect: true },
+		],
+	},
+	{
+		titulo: `I ___ like vegetables.`,
+		opciones: [
+			{ id: 97, textoRespuesta: `'am`, isCorrect: false },
+			{ id: 98, textoRespuesta: `don't`, isCorrect: true },
+			{ id: 99, textoRespuesta: 'do', isCorrect: false },
+			{ id: 100, textoRespuesta: 'does', isCorrect: false },
+		],
+	},
+	{
+		titulo: `He ___ tall.`,
+		opciones: [
+			{ id: 101, textoRespuesta: 'do', isCorrect: false },
+			{ id: 102, textoRespuesta: `isn't`, isCorrect: true },
+			{ id: 103, textoRespuesta: `aren't`, isCorrect: false },
+			{ id: 104, textoRespuesta: 'are', isCorrect: false },
+		],
+	},
+	{
+		titulo: `The dog ___ bite.`,
+		opciones: [
+			{ id: 105, textoRespuesta: `doesn't`, isCorrect: true },
+			{ id: 106, textoRespuesta: 'do', isCorrect: false },
+			{ id: 107, textoRespuesta: `aren't`, isCorrect: false },
+			{ id: 108, textoRespuesta: 'are', isCorrect: false },
+		],
+	},
+	{
+		titulo: `They ___ eat meat.`,
+		opciones: [
+			{ id: 109, textoRespuesta: 'is', isCorrect: false },
+			{ id: 110, textoRespuesta: `doesn't`, isCorrect: false },
+			{ id: 111, textoRespuesta: 'are', isCorrect: false },
+			{ id: 112, textoRespuesta: `don't`, isCorrect: true },
+		],
+	},
+	{
+		titulo: '___ they play basketball?',
+		opciones: [
+			{ id: 113, textoRespuesta: 'Do', isCorrect: true },
+			{ id: 114, textoRespuesta: 'Does', isCorrect: false },
+			{ id: 115, textoRespuesta: `isn't`, isCorrect: false },
+			{ id: 116, textoRespuesta: 'is', isCorrect: false },
+		],
+	},
+	{
+		titulo: '___ I have to go now?',
+		opciones: [
+			{ id: 117, textoRespuesta: 'Does', isCorrect: false },
+			{ id: 118, textoRespuesta: 'Do', isCorrect: true },
+			{ id: 119, textoRespuesta: `Isn't`, isCorrect: false },
+			{ id: 120, textoRespuesta: 'Are', isCorrect: false },
+		],
+	},
+	{
+		titulo: '___ it snow in Summer?',
+		opciones: [
+			{ id: 121, textoRespuesta: 'Do', isCorrect: false },
+			{ id: 122, textoRespuesta: 'Does', isCorrect: true },
+			{ id: 123, textoRespuesta: `Aren't`, isCorrect: false },
+			{ id: 124, textoRespuesta: 'Are', isCorrect: false },
+		],
+	},
+	{
+		titulo: '___ he work on Sundays?',
+		opciones: [
+			{ id: 125, textoRespuesta: 'Do', isCorrect: false },
+			{ id: 126, textoRespuesta: `Aren't`, isCorrect: false },
+			{ id: 127, textoRespuesta: 'Are', isCorrect: false },
+			{ id: 128, textoRespuesta: 'Does', isCorrect: true },
+		],
+	},
+	{
+		titulo: 'The dog ___ loudly.',
+		opciones: [
+			{ id: 129, textoRespuesta: 'Do', isCorrect: false },
+			{ id: 130, textoRespuesta: 'bark', isCorrect: false },
+			{ id: 131, textoRespuesta: 'Are', isCorrect: false },
+			{ id: 132, textoRespuesta: 'barks', isCorrect: true },
+		],
+	},
+	{
+		titulo: 'I ___ to read books.',
+		opciones: [
+			{ id: 133, textoRespuesta: 'like', isCorrect: true },
+			{ id: 134, textoRespuesta: 'are', isCorrect: false },
+			{ id: 135, textoRespuesta: `aren't`, isCorrect: false },
+			{ id: 136, textoRespuesta: 'likes', isCorrect: false },
+		],
+	},
+	{
+		titulo: `I ___ have a car.`,
+		opciones: [
+			{ id: 137, textoRespuesta: 'do', isCorrect: false },
+			{ id: 138, textoRespuesta: `aren't`, isCorrect: false },
+			{ id: 139, textoRespuesta: `don't`, isCorrect: true },
+			{ id: 140, textoRespuesta: 'does', isCorrect: false },
+		],
+	},
+	{
+		titulo: '___ I know you?',
+		opciones: [
+			{ id: 141, textoRespuesta: 'Do', isCorrect: true },
+			{ id: 142, textoRespuesta: `Aren't`, isCorrect: false },
+			{ id: 143, textoRespuesta: 'Does', isCorrect: false },
+			{ id: 144, textoRespuesta: 'Are', isCorrect: false },
+		],
+	},
+	{
+		titulo: `___ he study at night?`,
+		opciones: [
+			{ id: 145, textoRespuesta: 'Do', isCorrect: false },
+			{ id: 146, textoRespuesta: `Doesn't`, isCorrect: true },
+			{ id: 147, textoRespuesta: `Aren't`, isCorrect: false },
+			{ id: 148, textoRespuesta: 'Are', isCorrect: false },
+		],
+	},
+	{
+		titulo: 'The cat ___ high.',
+		opciones: [
+			{ id: 149, textoRespuesta: 'jumps', isCorrect: true },
+			{ id: 150, textoRespuesta: `aren't`, isCorrect: false },
+			{ id: 151, textoRespuesta: 'jump', isCorrect: false },
+			{ id: 152, textoRespuesta: 'are', isCorrect: false },
+		],
+	},
+	{
+		titulo: 'I ___ learning new things.',
+		opciones: [
+			{ id: 153, textoRespuesta: 'loves', isCorrect: false },
+			{ id: 154, textoRespuesta: `isn't`, isCorrect: false },
+			{ id: 155, textoRespuesta: 'is', isCorrect: false },
+			{ id: 156, textoRespuesta: 'love', isCorrect: true },
+		],
+	},
+	{
+		titulo: `He ___ interested in politics.`,
+		opciones: [
+			{ id: 157, textoRespuesta: 'do', isCorrect: false },
+			{ id: 158, textoRespuesta: `isn't`, isCorrect: true },
+			{ id: 159, textoRespuesta: 'are', isCorrect: false },
+			{ id: 160, textoRespuesta: `aren't`, isCorrect: false },
 		],
 	},
 ];

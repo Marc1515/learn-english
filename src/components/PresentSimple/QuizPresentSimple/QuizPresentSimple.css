@@ -49,6 +49,13 @@
 	gap: 0.8rem !important;
 }
 
+.lado-derecho :first-child {
+	height: 1rem;
+}
+.lado-derecho :first-child :first-child {
+	height: 0.5rem;
+}
+
 .lado-derecho button {
 	display: flex;
 	justify-content: center;

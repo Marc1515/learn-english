@@ -30,7 +30,7 @@ const PresentSimple = () => {
 					esta lección, como en las demás lecciones sobre los tiempos verbales,
 					miraremos su estructura y uso.
 				</Typography>
-				<Typography variant='h4' component='h2' gutterBottom>
+				<Typography variant='h5' component='h2' gutterBottom>
 					Reglas Gramaticales
 				</Typography>
 				<Box
@@ -212,6 +212,15 @@ const PresentSimple = () => {
 						</ul>
 					</div>
 				</div>
+				<Typography
+					py={5}
+					sx={{ fontStyle: 'italic' }}
+					variant='body1'
+					paragraph
+				>
+					¡Ahora que ya sabes las normas básicas del Present Simple, puedes
+					realizar el Quiz tantas veces como quieras para mejorar aún más!
+				</Typography>
 			</div>
 			<QuizContextProvider>
 				<QuizPresentSimple />

@@ -6,6 +6,7 @@ export const QuizContext = createContext();
 
 export function QuizContextProvider(props) {
 	const [allQuestions, setAllQuestions] = useState(false);
+	const [progressBar, setProgressBar] = useState(false);
 	const [userAnswers, setUserAnswers] = useState([]);
 	const [colorAnswer, setColorAnswer] = useState([]);
 	const [newArray, setNewArray] = useState();
@@ -64,6 +65,8 @@ export function QuizContextProvider(props) {
 		setUserAnswers,
 		colorAnswer,
 		setColorAnswer,
+		progressBar,
+		setProgressBar,
 	};
 
 	return (

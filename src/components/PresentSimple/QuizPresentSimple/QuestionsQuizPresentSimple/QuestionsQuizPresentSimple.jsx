@@ -1,6 +1,8 @@
 /* eslint-disable prefer-const */
 import { useContext, useEffect, useState } from 'react';
 import { QuizContext } from '../../../../contexts/quizContext';
+import Box from '@mui/material/Box';
+import LinearProgress from '@mui/material/LinearProgress';
 
 const QuestionsQuizPresentSimple = () => {
 	const [answeDisabled, setAnsweDisabled] = useState(false);
@@ -18,6 +20,8 @@ const QuestionsQuizPresentSimple = () => {
 		setAllQuestions,
 		userAnswers,
 		colorAnswer,
+		progressBar,
+		setProgressBar,
 	} = useContext(QuizContext);
 
 	const handleAnswerSubmit = (isCorrect, e, textoRespuesta) => {
@@ -34,6 +38,12 @@ const QuestionsQuizPresentSimple = () => {
 
 		setTimeout(() => {
 			setAnsweDisabled(false);
+		}, 2000);
+
+		setProgressBar(true);
+
+		setTimeout(() => {
+			setProgressBar(false);
 		}, 2000);
 
 		setTimeout(() => {
@@ -87,6 +97,13 @@ const QuestionsQuizPresentSimple = () => {
 					</div>
 				</div>
 				<div className='lado-derecho'>
+					{progressBar ? (
+						<Box sx={{ width: '100%', color: 'grey.500' }}>
+							<LinearProgress color='inherit' />
+						</Box>
+					) : (
+						<div></div>
+					)}
 					{newArray[preguntaActual].opciones.map((respuesta) => (
 						<button
 							disabled={areDisabled || answeDisabled}

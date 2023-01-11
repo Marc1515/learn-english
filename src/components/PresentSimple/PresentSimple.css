@@ -12,10 +12,6 @@ body {
 	padding-top: 3rem;
 }
 
-.container-PresentSimple :nth-child(2) {
-	padding-right: 1rem;
-}
-
 .section1-container {
 	display: flex;
 	flex-direction: column;
