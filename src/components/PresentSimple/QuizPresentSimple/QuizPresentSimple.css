@@ -65,6 +65,7 @@
 	display: flex;
 	justify-content: center;
 	width: 40%;
+	margin: 0 !important;
 }
 
 /* FINALIZADO */
@@ -139,10 +140,9 @@ button {
 }
 
 .container-tiempo-restante {
-	height: 2rem;
 	display: flex;
 	justify-content: start;
-	align-items: flex-end;
+	height: 2rem;
 }
 
 .tiempo-restante {
@@ -150,6 +150,7 @@ button {
 	color: #3f72af !important;
 	margin-bottom: 0 !important;
 	font-size: xx-large !important;
+	margin: 0 !important;
 }
 
 .correct,
@@ -193,12 +194,12 @@ hr {
 	margin-bottom: 2rem;
 }
 
-.btn-respuestas {
+/* .btn-respuestas {
 	display: flex;
 	justify-content: center;
 	height: 4.5rem;
 	width: 60%;
-}
+} */
 
 .btn-reset {
 	display: flex;
@@ -206,12 +207,11 @@ hr {
 	width: 60%;
 }
 
-.backToFinishView {
-	display: flex;
-	justify-content: end;
-	border: none !important;
+.lado-izquierdo-preguntas {
+	margin: 0 !important;
 }
 
-.backToFinishView :first-child {
-	margin: 0;
+.lado-izquierdo-preguntas :first-child {
+	padding-bottom: 2rem;
+	margin: 0 !important;
 }

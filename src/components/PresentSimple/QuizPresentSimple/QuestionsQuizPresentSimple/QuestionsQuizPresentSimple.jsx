@@ -88,7 +88,7 @@ const QuestionsQuizPresentSimple = () => {
 	if (preguntaActual < 4) {
 		return (
 			<main className='main-container'>
-				<div className='lado-izquierdo'>
+				<div className='lado-izquierdo-preguntas'>
 					<div className='numero-pregunta'>
 						<span> Pregunta {preguntaActual + 1}</span> de {newArray.length}
 					</div>

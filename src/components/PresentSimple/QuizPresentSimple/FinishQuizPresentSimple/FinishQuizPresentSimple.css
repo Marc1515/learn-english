@@ -6,6 +6,11 @@
 	gap: 1rem;
 }
 
+.juego-terminado-titulo button {
+	width: 10rem;
+	height: 4rem;
+}
+
 .juego-terminado-titulo :nth-child(1) {
 	font-size: larger;
 }
