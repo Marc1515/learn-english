@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { QuizContext } from '../../../../contexts/quizContext';
 import RestartAltIcon from '@mui/icons-material/RestartAlt';
+import './FinishQuizPresentSimple.css';
 
 const FinishQuizPresentSimple = () => {
 	const {
@@ -14,8 +15,8 @@ const FinishQuizPresentSimple = () => {
 
 	return (
 		<main className='main-container'>
-			<div className='juego-terminado'>
-				<span>
+			<div className='juego-terminado-titulo'>
+				<span className='total'>
 					{' '}
 					Total {puntuacion} de {newArray.length}{' '}
 				</span>

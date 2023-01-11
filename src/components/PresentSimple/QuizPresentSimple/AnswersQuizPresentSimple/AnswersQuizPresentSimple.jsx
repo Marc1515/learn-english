@@ -29,7 +29,7 @@ const AnswersQuizPresentSimple = () => {
 				{newArray.map((pregunta, i) => (
 					<div key={pregunta.titulo}>
 						<span>Pregunta {i + 1}</span>
-						<p>{pregunta.titulo}</p>
+						<p className='sentence'>{pregunta.titulo}</p>
 						<div className='box'>
 							<p className='ver-respuestas'>
 								{
