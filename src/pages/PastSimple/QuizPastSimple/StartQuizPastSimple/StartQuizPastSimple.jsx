@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { QuizContext } from '../../../../contexts/quizContext';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 
-const StartQuizPresentSimple = () => {
+const StartQuizPastSimple = () => {
 	const {
 		setPreguntaActual,
 		setTiempoRestante,
@@ -50,4 +50,4 @@ const StartQuizPresentSimple = () => {
 	);
 };
 
-export default StartQuizPresentSimple;
+export default StartQuizPastSimple;

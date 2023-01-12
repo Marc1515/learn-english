@@ -131,6 +131,7 @@ button {
 
 .btn-one {
 	height: 5rem;
+	width: 40%;
 }
 
 .btn-one :first-child {

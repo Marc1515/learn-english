@@ -1,13 +1,13 @@
 import React from 'react';
-import QuizPresentSimple from './QuizPresentSimple/QuizPresentSimple';
+import QuizPresentSimple from './QuizPastSimple/QuizPastSimple';
 import './PastSimple.css';
 import Typography from '@mui/material/Typography';
 import { Box } from '@mui/material';
 import estructureImg from '../../assets/pastSimpleEstructure.png';
 
-import ReglasGramaticalesPresentSimple from './ReglasGramaticalesPresentSimple/ReglasGramaticalesPresentSimple';
-import EstructuraPresentSimple from './EstructuraPresentSimple/EstructuraPresentSimple';
-import AdverbiosPresentSimple from './AdverbiosPresentSimple/AdverbiosPresentSimple';
+import ReglasGramaticalesPresentSimple from './ReglasGramaticalesPastSimple/ReglasGramaticalesPastSimple';
+import EstructuraPresentSimple from './EstructuraPastSimple/EstructuraPastSimple';
+import AdverbiosPresentSimple from './AdverbiosPastSimple/AdverbiosPastSimple';
 import { QuizContextProvider } from '../../contexts/quizContext';
 
 const PastSimple = () => {

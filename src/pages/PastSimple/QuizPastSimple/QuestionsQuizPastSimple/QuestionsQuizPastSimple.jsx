@@ -4,7 +4,7 @@ import { QuizContext } from '../../../../contexts/quizContext';
 import Box from '@mui/material/Box';
 import LinearProgress from '@mui/material/LinearProgress';
 
-const QuestionsQuizPresentSimple = () => {
+const QuestionsQuizPastSimple = () => {
 	const [answeDisabled, setAnsweDisabled] = useState(false);
 	const {
 		preguntaActual,
@@ -139,4 +139,4 @@ const QuestionsQuizPresentSimple = () => {
 	}
 };
 
-export default QuestionsQuizPresentSimple;
+export default QuestionsQuizPastSimple;

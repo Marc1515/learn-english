@@ -2,9 +2,9 @@
 import { useContext } from 'react';
 import { QuizContext } from '../../../../contexts/quizContext';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
-import './AnswersQuizPresentSimple.css';
+import './AnswersQuizPastSimple.css';
 
-const AnswersQuizPresentSimple = () => {
+const AnswersQuizPastSimple = () => {
 	const {
 		setIsFinished,
 		setIsStarted,
@@ -50,4 +50,4 @@ const AnswersQuizPresentSimple = () => {
 	);
 };
 
-export default AnswersQuizPresentSimple;
+export default AnswersQuizPastSimple;

@@ -1,9 +1,9 @@
 import { useContext } from 'react';
 import { QuizContext } from '../../../../contexts/quizContext';
 import RestartAltIcon from '@mui/icons-material/RestartAlt';
-import './FinishQuizPresentSimple.css';
+import './FinishQuizPastSimple.css';
 
-const FinishQuizPresentSimple = () => {
+const FinishQuizPastSimple = () => {
 	const {
 		setPreguntaActual,
 		puntuacion,
@@ -45,4 +45,4 @@ const FinishQuizPresentSimple = () => {
 	);
 };
 
-export default FinishQuizPresentSimple;
+export default FinishQuizPastSimple;

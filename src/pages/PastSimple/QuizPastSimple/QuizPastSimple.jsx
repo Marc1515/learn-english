@@ -1,9 +1,9 @@
 import { useContext } from 'react';
-import './QuizPresentSimple.css';
-import StartQuizPresentSimple from './StartQuizPresentSimple/StartQuizPresentSimple';
-import QuestionsQuizPresentSimple from './QuestionsQuizPresentSimple/QuestionsQuizPresentSimple';
-import FinishQuizPresentSimple from './FinishQuizPresentSimple/FinishQuizPresentSimple';
-import AnswersQuizPresentSimple from './AnswersQuizPresentSimple/AnswersQuizPresentSimple';
+import './QuizPastSimple.css';
+import StartQuizPresentSimple from './StartQuizPastSimple/StartQuizPastSimple';
+import QuestionsQuizPresentSimple from './QuestionsQuizPastSimple/QuestionsQuizPastSimple';
+import FinishQuizPresentSimple from './FinishQuizPastSimple/FinishQuizPastSimple';
+import AnswersQuizPresentSimple from './AnswersQuizPastSimple/AnswersQuizPastSimple';
 import { QuizContext } from '../../../contexts/quizContext';
 
 function QuizPresentSimple() {
