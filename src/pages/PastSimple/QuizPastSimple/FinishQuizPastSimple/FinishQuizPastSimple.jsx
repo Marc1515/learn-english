@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { QuizContext } from '../../../../contexts/quizContext';
+import { QuizContext } from '../../../../contexts/quizContextPastSimple';
 import RestartAltIcon from '@mui/icons-material/RestartAlt';
 import './FinishQuizPastSimple.css';
 

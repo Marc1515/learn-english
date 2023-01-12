@@ -1,6 +1,6 @@
 /* eslint-disable prefer-const */
 import { useContext, useEffect, useState } from 'react';
-import { QuizContext } from '../../../../contexts/quizContext';
+import { QuizContext } from '../../../../contexts/quizContextPastSimple';
 import Box from '@mui/material/Box';
 import LinearProgress from '@mui/material/LinearProgress';
 

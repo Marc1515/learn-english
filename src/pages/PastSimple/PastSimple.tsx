@@ -1,14 +1,14 @@
 import React from 'react';
-import QuizPresentSimple from './QuizPastSimple/QuizPastSimple';
+import QuizPastSimple from './QuizPastSimple/QuizPastSimple';
 import './PastSimple.css';
 import Typography from '@mui/material/Typography';
 import { Box } from '@mui/material';
 import estructureImg from '../../assets/pastSimpleEstructure.png';
 
-import ReglasGramaticalesPresentSimple from './ReglasGramaticalesPastSimple/ReglasGramaticalesPastSimple';
-import EstructuraPresentSimple from './EstructuraPastSimple/EstructuraPastSimple';
-import AdverbiosPresentSimple from './AdverbiosPastSimple/AdverbiosPastSimple';
-import { QuizContextProvider } from '../../contexts/quizContext';
+import ReglasGramaticalesPastSimple from './ReglasGramaticalesPastSimple/ReglasGramaticalesPastSimple';
+import EstructuraPastSimple from './EstructuraPastSimple/EstructuraPastSimple';
+import AdverbiosPastSimple from './AdverbiosPastSimple/AdverbiosPastSimple';
+import { QuizContextProvider } from '../../contexts/quizContextPastSimple';
 
 const PastSimple = () => {
 	return (
@@ -55,11 +55,11 @@ const PastSimple = () => {
 				<div className='section1-container-wrapper'>
 					<div className='section1-container'>
 						{/* Reglas Gramaticales */}
-						<ReglasGramaticalesPresentSimple />
+						<ReglasGramaticalesPastSimple />
 						{/* Estructura */}
-						<EstructuraPresentSimple />
+						<EstructuraPastSimple />
 						{/* Adverbios */}
-						<AdverbiosPresentSimple />
+						<AdverbiosPastSimple />
 					</div>
 				</div>
 				<div className='sentenceTranslated-container'>
@@ -270,7 +270,7 @@ const PastSimple = () => {
 			</div>
 			<div className='quiz-container'>
 				<QuizContextProvider>
-					<QuizPresentSimple />
+					<QuizPastSimple />
 				</QuizContextProvider>
 			</div>
 		</>

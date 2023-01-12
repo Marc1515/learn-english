@@ -1,23 +1,23 @@
 import { useContext } from 'react';
 import './QuizPastSimple.css';
-import StartQuizPresentSimple from './StartQuizPastSimple/StartQuizPastSimple';
-import QuestionsQuizPresentSimple from './QuestionsQuizPastSimple/QuestionsQuizPastSimple';
-import FinishQuizPresentSimple from './FinishQuizPastSimple/FinishQuizPastSimple';
-import AnswersQuizPresentSimple from './AnswersQuizPastSimple/AnswersQuizPastSimple';
-import { QuizContext } from '../../../contexts/quizContext';
+import StartQuizPastSimple from './StartQuizPastSimple/StartQuizPastSimple';
+import QuestionsQuizPastSimple from './QuestionsQuizPastSimple/QuestionsQuizPastSimple';
+import FinishQuizPastSimple from './FinishQuizPastSimple/FinishQuizPastSimple';
+import AnswersQuizPastSimple from './AnswersQuizPastSimple/AnswersQuizPastSimple';
+import { QuizContext } from '../../../contexts/quizContextPastSimple';
 
-function QuizPresentSimple() {
+function QuizPastSimple() {
 	const { isFinished, answerShow, isStarted, allQuestions } =
 		useContext(QuizContext);
 
 	/* En el caso de que el juego haya terminado */
-	if (isFinished) return <FinishQuizPresentSimple />;
+	if (isFinished) return <FinishQuizPastSimple />;
 	/* Cuando se muestran las respuestas correctas */
-	if (answerShow) return <AnswersQuizPresentSimple />;
+	if (answerShow) return <AnswersQuizPastSimple />;
 	/* En el caso que el juego esté por empezar */
-	if (isStarted) return <StartQuizPresentSimple />;
+	if (isStarted) return <StartQuizPastSimple />;
 	/* Las preguntas del Quiz */
-	if (allQuestions) return <QuestionsQuizPresentSimple />;
+	if (allQuestions) return <QuestionsQuizPastSimple />;
 }
 
-export default QuizPresentSimple;
+export default QuizPastSimple;

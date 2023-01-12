@@ -1,6 +1,6 @@
 /* eslint-disable prefer-const */
 import { useContext } from 'react';
-import { QuizContext } from '../../../../contexts/quizContext';
+import { QuizContext } from '../../../../contexts/quizContextPastSimple';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import './AnswersQuizPastSimple.css';
 

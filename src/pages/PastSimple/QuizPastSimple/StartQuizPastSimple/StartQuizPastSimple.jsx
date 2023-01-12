@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { QuizContext } from '../../../../contexts/quizContext';
+import { QuizContext } from '../../../../contexts/quizContextPastSimple';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 
 const StartQuizPastSimple = () => {
