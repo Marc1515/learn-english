@@ -264,7 +264,7 @@ const PastSimple = () => {
 					variant='body1'
 					paragraph
 				>
-					¡Ahora que ya sabes las normas básicas del Present Simple, puedes
+					¡Ahora que ya sabes las normas básicas del Past Simple, puedes
 					realizar el Quiz tantas veces como quieras para mejorar aún más!
 				</Typography>
 			</div>

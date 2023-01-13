@@ -1,7 +1,8 @@
-import React from 'react';
+import CardHome from '../../components/CardHome/CardHome';
+import './HomePage.css';
 
 const HomePage = () => {
-	return <div>HomePage</div>;
+	return <CardHome />;
 };
 
 export { HomePage };

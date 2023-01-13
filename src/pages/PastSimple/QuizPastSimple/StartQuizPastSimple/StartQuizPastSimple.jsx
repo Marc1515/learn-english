@@ -19,7 +19,7 @@ const StartQuizPastSimple = () => {
 	return (
 		<main className='main-container'>
 			<div className='empezar-titulo'>
-				<span>Present Simple</span>
+				<span>Past Simple</span>
 				<span>Quiz</span>
 				<span>
 					Realiza un Quiz rápido de poco más de un minuto para poner a prueba

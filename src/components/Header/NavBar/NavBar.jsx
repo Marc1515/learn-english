@@ -16,19 +16,25 @@ const NavBar = () => {
 			<NavContainer>
 				<div className='container-navbar'>
 					<h2>
-						Learn <span>English</span>
+						{' '}
+						<a href='/'>
+							Learn <span>English</span>
+						</a>
 					</h2>
 				</div>
 				<div className={`links ${clicked ? 'active' : ''}`}>
-					<a href='/'>Home</a>
-					<a href='/#/present-simple' onClick={handleClick}>
-						Present Simple
+					<a href='/#/' onClick={handleClick}>
+						Home
 					</a>
-					<a href='/#/past-simple' onClick={handleClick}>
-						Past Simple
+					<a href='/#/' onClick={handleClick}>
+						Vocabulary
 					</a>
-					<a href='/'>Contact</a>
-					<a href='/'>Blog</a>
+					<a href='/#/' onClick={handleClick}>
+						Perfil
+					</a>
+					<a href='/#/' onClick={handleClick}>
+						FAQs
+					</a>
 				</div>
 				<div className='burguer'>
 					<BurgerButton clicked={clicked} handleClick={handleClick} />
@@ -99,14 +105,16 @@ const NavContainer = styled.nav`
 		position: absolute;
 		margin-left: auto;
 		margin-right: auto;
-		top: 7rem;
+		top: 8rem;
 		left: 0;
 		right: 0;
 		text-align: center;
 		a {
-			font-size: 2rem;
+			font-size: 2.5rem;
 			margin-top: 1rem;
 			color: white;
+			padding-top: 0.5rem;
+			padding-bottom: 0.5rem;
 		}
 	}
 	.burguer {
