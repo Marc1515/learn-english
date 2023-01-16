@@ -9,7 +9,7 @@ const CardsHome = [
 	},
 	{
 		titulo: 'Present Continuous',
-		url: '/#/present-continuous',
+		url: '/#/present-countinuous',
 	},
 	{
 		titulo: 'Future Simple',
