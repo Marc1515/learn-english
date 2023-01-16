@@ -21,7 +21,7 @@ const preguntas = [
 		titulo: '___ she come from London?',
 		opciones: [
 			{ id: 9, textoRespuesta: 'Is', isCorrect: false },
-			{ id: 10, textoRespuesta: 'Did', isCorrect: true },
+			{ id: 10, textoRespuesta: 'Does', isCorrect: true },
 			{ id: 11, textoRespuesta: 'Done', isCorrect: false },
 			{ id: 12, textoRespuesta: 'Do', isCorrect: false },
 		],

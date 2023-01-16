@@ -66,7 +66,7 @@ const preguntas = [
 		titulo: 'The flowers ___.',
 		opciones: [
 			{ id: 29, textoRespuesta: 'are blooming', isCorrect: true },
-			{ id: 30, textoRespuesta: `aren't blooming`, isCorrect: false },
+			{ id: 30, textoRespuesta: `aren't bloom`, isCorrect: false },
 			{ id: 31, textoRespuesta: 'is bloom', isCorrect: false },
 			{ id: 32, textoRespuesta: 'is blooming', isCorrect: false },
 		],
@@ -85,7 +85,7 @@ const preguntas = [
 		opciones: [
 			{ id: 37, textoRespuesta: `aren't laugh`, isCorrect: false },
 			{ id: 38, textoRespuesta: 'is laughing', isCorrect: false },
-			{ id: 39, textoRespuesta: `aren't laughing`, isCorrect: false },
+			{ id: 39, textoRespuesta: `isn't laughing`, isCorrect: false },
 			{ id: 40, textoRespuesta: 'are laughing', isCorrect: true },
 		],
 	},
