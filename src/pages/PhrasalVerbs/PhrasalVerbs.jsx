@@ -11,6 +11,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import './PhrasalVerbs.css';
+import { useState } from 'react';
 
 function createData(verbo, traduccion) {
 	return { verbo, traduccion };
@@ -372,6 +373,10 @@ const rows6 = [
 ];
 
 const PhrasalVerbs = () => {
+	const [expanded, setExpanded] = useState(false);
+	const handleChange = (isExpanded, panel) => {
+		setExpanded(isExpanded ? panel : false);
+	};
 	return (
 		<div className='container-PresentSimple'>
 			<Typography
@@ -392,7 +397,10 @@ const PhrasalVerbs = () => {
 				aprender para los hablantes de otros idiomas.
 			</Typography>
 			<div className='accordions-container'>
-				<Accordion>
+				<Accordion
+					expanded={expanded === 'panel1'}
+					onChange={(event, isExpanded) => handleChange(isExpanded, 'panel1')}
+				>
 					<AccordionSummary
 						expandIcon={<ExpandMoreIcon />}
 						aria-controls='panel1a-content'
@@ -425,11 +433,14 @@ const PhrasalVerbs = () => {
 						</TableContainer>
 					</AccordionDetails>
 				</Accordion>
-				<Accordion>
+				<Accordion
+					expanded={expanded === 'panel2'}
+					onChange={(event, isExpanded) => handleChange(isExpanded, 'panel2')}
+				>
 					<AccordionSummary
 						expandIcon={<ExpandMoreIcon />}
-						aria-controls='panel1a-content'
-						id='panel1a-header'
+						aria-controls='panel2a-content'
+						id='panel2a-header'
 					>
 						<Typography py={1} variant='h5' component='h2'>
 							C - D
@@ -458,11 +469,14 @@ const PhrasalVerbs = () => {
 						</TableContainer>
 					</AccordionDetails>
 				</Accordion>
-				<Accordion>
+				<Accordion
+					expanded={expanded === 'panel3'}
+					onChange={(event, isExpanded) => handleChange(isExpanded, 'panel3')}
+				>
 					<AccordionSummary
 						expandIcon={<ExpandMoreIcon />}
-						aria-controls='panel1a-content'
-						id='panel1a-header'
+						aria-controls='panel3a-content'
+						id='panel3a-header'
 					>
 						<Typography py={1} variant='h5' component='h2'>
 							E - H
@@ -491,11 +505,14 @@ const PhrasalVerbs = () => {
 						</TableContainer>
 					</AccordionDetails>
 				</Accordion>
-				<Accordion>
+				<Accordion
+					expanded={expanded === 'panel4'}
+					onChange={(event, isExpanded) => handleChange(isExpanded, 'panel4')}
+				>
 					<AccordionSummary
 						expandIcon={<ExpandMoreIcon />}
-						aria-controls='panel1a-content'
-						id='panel1a-header'
+						aria-controls='panel4a-content'
+						id='panel4a-header'
 					>
 						<Typography py={1} variant='h5' component='h2'>
 							J - P
@@ -524,11 +541,14 @@ const PhrasalVerbs = () => {
 						</TableContainer>
 					</AccordionDetails>
 				</Accordion>
-				<Accordion>
+				<Accordion
+					expanded={expanded === 'panel5'}
+					onChange={(event, isExpanded) => handleChange(isExpanded, 'panel5')}
+				>
 					<AccordionSummary
 						expandIcon={<ExpandMoreIcon />}
-						aria-controls='panel1a-content'
-						id='panel1a-header'
+						aria-controls='panel5a-content'
+						id='panel5a-header'
 					>
 						<Typography py={1} variant='h5' component='h2'>
 							R - S
@@ -557,11 +577,14 @@ const PhrasalVerbs = () => {
 						</TableContainer>
 					</AccordionDetails>
 				</Accordion>
-				<Accordion>
+				<Accordion
+					expanded={expanded === 'panel6'}
+					onChange={(event, isExpanded) => handleChange(isExpanded, 'panel6')}
+				>
 					<AccordionSummary
 						expandIcon={<ExpandMoreIcon />}
-						aria-controls='panel1a-content'
-						id='panel1a-header'
+						aria-controls='panel6a-content'
+						id='panel6a-header'
 					>
 						<Typography py={1} variant='h5' component='h2'>
 							T - W
