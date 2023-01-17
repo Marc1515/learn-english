@@ -26,7 +26,7 @@ const NavBar = () => {
 					<a href='/#/' onClick={handleClick}>
 						Home
 					</a>
-					<a href='/#/' onClick={handleClick}>
+					<a href='/#/vocabulary' onClick={handleClick}>
 						Vocabulary
 					</a>
 					<a href='/#/' onClick={handleClick}>
