@@ -1,6 +1,7 @@
-import { Typography, Box } from '@mui/material';
 import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import { Typography, CardActionArea } from '@mui/material';
+
 import CardsHome from './CardsHome';
 import './CardHome.css';
 
@@ -12,15 +13,13 @@ const CardHome = () => {
 			</Typography>
 			<div className='container-wrapper-card'>
 				{CardsHome.map((card) => (
-					<div className='wrapper-card' key={card.titulo}>
-						<Card>
-							<CardContent>
-								<a href={card.url}>
-									<Box component='img' src={card.image} />
-								</a>
-							</CardContent>
+					<a href={card.url} key={card.titulo}>
+						<Card className='wrapper-card'>
+							<CardActionArea>
+								<CardMedia component='img' height='120' image={card.image} />
+							</CardActionArea>
 						</Card>
-					</div>
+					</a>
 				))}
 			</div>
 		</>
