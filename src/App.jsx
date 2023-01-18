@@ -10,6 +10,7 @@ import { Vocabulary } from './pages/Vocabulary/Vocabulary';
 import { NotFound } from './components/NotFound/NotFound';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import { AppContextProvider } from './contexts/appContext';
 
 function App() {
 	return (
@@ -17,20 +18,22 @@ function App() {
 			<>
 				<HashRouter>
 					<Header />
-					<Routes>
-						<Route path='/' element={<HomePage />} />
-						<Route path='/present-simple' element={<PresentSimple />} />
-						<Route path='/past-simple' element={<PastSimple />} />
-						<Route
-							path='/present-countinuous'
-							element={<PresentContinuous />}
-						/>
-						<Route path='/future-simple' element={<FutureSimple />} />
-						<Route path='/irregular-verbs' element={<IrregularVerbs />} />
-						<Route path='/phrasal-verbs' element={<PhrasalVerbs />} />
-						<Route path='/vocabulary' element={<Vocabulary />} />
-						<Route path='*' element={<NotFound />} />
-					</Routes>
+					<AppContextProvider>
+						<Routes>
+							<Route path='/' element={<HomePage />} />
+							<Route path='/present-simple' element={<PresentSimple />} />
+							<Route path='/past-simple' element={<PastSimple />} />
+							<Route
+								path='/present-countinuous'
+								element={<PresentContinuous />}
+							/>
+							<Route path='/future-simple' element={<FutureSimple />} />
+							<Route path='/irregular-verbs' element={<IrregularVerbs />} />
+							<Route path='/phrasal-verbs' element={<PhrasalVerbs />} />
+							<Route path='/vocabulary' element={<Vocabulary />} />
+							<Route path='*' element={<NotFound />} />
+						</Routes>
+					</AppContextProvider>
 					<Footer />
 				</HashRouter>
 			</>
