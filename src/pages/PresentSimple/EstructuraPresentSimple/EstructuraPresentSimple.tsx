@@ -1,4 +1,6 @@
 import React from 'react';
+import { useContext } from 'react';
+import { appContext } from '../../../contexts/appContext';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import {
 	Accordion,
@@ -15,6 +17,8 @@ import {
 } from '@mui/material';
 
 const EstructuraPresentSimple = () => {
+	const { expanded, handleChange } = useContext(appContext);
+
 	function createData(subject: string, verbo: string, conjugation: string) {
 		return { subject, verbo, conjugation };
 	}
@@ -39,11 +43,14 @@ const EstructuraPresentSimple = () => {
 
 	return (
 		<div className='prueba'>
-			<Accordion>
+			<Accordion
+				expanded={expanded === 'panel2'}
+				onChange={(event, isExpanded) => handleChange(isExpanded, 'panel2')}
+			>
 				<AccordionSummary
 					expandIcon={<ExpandMoreIcon />}
-					aria-controls='panel1a-content'
-					id='panel1a-header'
+					aria-controls='panel2a-content'
+					id='panel2a-header'
 				>
 					<Typography variant='h4' component='h2' gutterBottom>
 						Estructura

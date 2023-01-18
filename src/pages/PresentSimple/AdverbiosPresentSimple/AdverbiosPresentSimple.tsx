@@ -1,4 +1,6 @@
 import React from 'react';
+import { useContext } from 'react';
+import { appContext } from '../../../contexts/appContext';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import {
 	Accordion,
@@ -16,6 +18,8 @@ import {
 import './AdverbiosPresentSimple.css';
 
 const AdverbiosPresentSimple = () => {
+	const { expanded, handleChange } = useContext(appContext);
+
 	function createData(adverbio: string, traduccion: string) {
 		return { adverbio, traduccion };
 	}
@@ -32,11 +36,14 @@ const AdverbiosPresentSimple = () => {
 	];
 	return (
 		<>
-			<Accordion>
+			<Accordion
+				expanded={expanded === 'panel3'}
+				onChange={(event, isExpanded) => handleChange(isExpanded, 'panel3')}
+			>
 				<AccordionSummary
 					expandIcon={<ExpandMoreIcon />}
-					aria-controls='panel1a-content'
-					id='panel1a-header'
+					aria-controls='panel3a-content'
+					id='panel3a-header'
 				>
 					<Typography variant='h4' component='h2' gutterBottom>
 						Adverbios

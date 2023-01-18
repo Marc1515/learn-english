@@ -1,4 +1,5 @@
-import { useState, useContext } from 'react';
+import { useContext } from 'react';
+import { appContext } from '../../contexts/appContext';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -13,10 +14,9 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { rows1, rows2, rows3, rows4, rows5, rows6 } from './IrregularVerbs';
 import './IrregularVerbs.css';
-import { appContext } from '../../contexts/appContext';
 
 const IrregularVerbs = () => {
-	const { expanded, setExpanded, handleChange } = useContext(appContext);
+	const { expanded, handleChange } = useContext(appContext);
 
 	return (
 		<div className='container-PresentSimple'>

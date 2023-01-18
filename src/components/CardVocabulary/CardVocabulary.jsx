@@ -1,23 +1,18 @@
-import { Typography } from '@mui/material';
 import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
 import CardsVocabulary from './CardsVocabulary';
+/* import './CardVocabulary.css'; */
 
 const CardVocabulary = () => {
 	return (
 		<>
-			<Typography variant='h1' component='h1' className='title-cards'>
-				Content
-			</Typography>
 			<div className='container-wrapper-card'>
 				{CardsVocabulary.map((card) => (
-					<div className='wrapper-card' key={card.titulo}>
-						<Card>
-							<CardContent>
-								<a href={card.url}>{card.titulo}</a>
-							</CardContent>
+					<a href={card.url} key={card.titulo}>
+						<Card className='wrapper-card'>
+							<CardMedia component='img' height='120' image={card.image} />
 						</Card>
-					</div>
+					</a>
 				))}
 			</div>
 		</>

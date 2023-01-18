@@ -7,7 +7,6 @@ import estructureImg from '../../assets/pastSimpleEstructure.png';
 
 import ReglasGramaticalesPastSimple from './ReglasGramaticalesPastSimple/ReglasGramaticalesPastSimple';
 import EstructuraPastSimple from './EstructuraPastSimple/EstructuraPastSimple';
-import AdverbiosPastSimple from './AdverbiosPastSimple/AdverbiosPastSimple';
 import { QuizContextProvider } from '../../contexts/quizContextPastSimple';
 
 const PastSimple = () => {
@@ -58,8 +57,6 @@ const PastSimple = () => {
 						<ReglasGramaticalesPastSimple />
 						{/* Estructura */}
 						<EstructuraPastSimple />
-						{/* Adverbios */}
-						<AdverbiosPastSimple />
 					</div>
 				</div>
 				<div className='sentenceTranslated-container'>

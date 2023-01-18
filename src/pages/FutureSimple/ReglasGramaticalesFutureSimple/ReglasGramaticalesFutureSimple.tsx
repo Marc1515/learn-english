@@ -1,4 +1,6 @@
 import React from 'react';
+import { useContext } from 'react';
+import { appContext } from '../../../contexts/appContext';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import {
 	Accordion,
@@ -16,6 +18,8 @@ import {
 } from '@mui/material';
 
 const ReglasGramaticalesFutureSimple = () => {
+	const { expanded, handleChange } = useContext(appContext);
+
 	function createData(subject: string, verbo: string, conjugation: string) {
 		return { subject, verbo, conjugation };
 	}
@@ -31,7 +35,10 @@ const ReglasGramaticalesFutureSimple = () => {
 	];
 	return (
 		<>
-			<Accordion>
+			<Accordion
+				expanded={expanded === 'panel1'}
+				onChange={(event, isExpanded) => handleChange(isExpanded, 'panel1')}
+			>
 				<AccordionSummary
 					expandIcon={<ExpandMoreIcon />}
 					aria-controls='panel1a-content'
