@@ -6,6 +6,10 @@ import { PresentContinuous } from './pages/PresentContinuous/PresentContinuous';
 import { FutureSimple } from './pages/FutureSimple/FutureSimple';
 import IrregularVerbs from './pages/IrregularVerbs/IrregularVerbs.jsx';
 import PhrasalVerbs from './pages/PhrasalVerbs/PhrasalVerbs.jsx';
+import Animals from './pages/Animals/Animals.jsx';
+import Food from './pages/Food/Food.jsx';
+import HumanBody from './pages/HumanBody/HumanBody.jsx';
+import Professions from './pages/Professions/Professions.jsx';
 import { Vocabulary } from './pages/Vocabulary/Vocabulary';
 import { NotFound } from './components/NotFound/NotFound';
 import Header from './components/Header/Header';
@@ -31,6 +35,10 @@ function App() {
 							<Route path='/irregular-verbs' element={<IrregularVerbs />} />
 							<Route path='/phrasal-verbs' element={<PhrasalVerbs />} />
 							<Route path='/vocabulary' element={<Vocabulary />} />
+							<Route path='/animals' element={<Animals />} />
+							<Route path='/food' element={<Food />} />
+							<Route path='/humanBody' element={<HumanBody />} />
+							<Route path='/professions' element={<Professions />} />
 							<Route path='*' element={<NotFound />} />
 						</Routes>
 					</AppContextProvider>

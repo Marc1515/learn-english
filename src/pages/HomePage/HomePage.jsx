@@ -6,7 +6,7 @@ const HomePage = () => {
 	return (
 		<>
 			{/* HomePage Section 1 */}
-			<Typography className='section1-home'>
+			<div className='section1-home'>
 				<Typography variant='h1' component='h1' className='title-cards'>
 					¡Bienvenido a Learn English!
 				</Typography>
@@ -20,9 +20,9 @@ const HomePage = () => {
 					conocimientos, diseñados para ayudarte a mejorar tu vocabulario y
 					gramática.
 				</Typography>
-			</Typography>
+			</div>
 			{/* HomePage Section 2 */}
-			<Typography className='section2-home'>
+			<div className='section2-home'>
 				<Typography variant='h1' component='h1' className='title-cards'>
 					Gammar
 				</Typography>
@@ -40,7 +40,7 @@ const HomePage = () => {
 					de la gramática del inglés para comunicarse eficazmente y comprender
 					el idioma en su totalidad.
 				</Typography>
-			</Typography>
+			</div>
 			<CardHome />;
 		</>
 	);

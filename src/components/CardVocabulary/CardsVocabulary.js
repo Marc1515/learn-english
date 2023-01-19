@@ -8,22 +8,22 @@ import clothesCard from './../../assets/clothesCard.png';
 const CardsHome = [
 	{
 		titulo: 'animals',
-		url: '/#/present-simple',
+		url: '/#/animals',
 		image: animalsCard,
 	},
 	{
 		titulo: 'Food',
-		url: '/#/past-simple',
+		url: '/#/food',
 		image: foodCard,
 	},
 	{
 		titulo: 'Human Body',
-		url: '/#/present-countinuous',
+		url: '/#/humanBody',
 		image: humanBodyCard,
 	},
 	{
 		titulo: 'Professions',
-		url: '/#/future-simple',
+		url: '/#/professions',
 		image: professionsCard,
 	},
 	{
