@@ -18,7 +18,7 @@ import './Professions.css';
 const Professions = () => {
 	const { expanded, handleChange } = useContext(appContext);
 	return (
-		<div className='accordions-container'>
+		<div className='accordions-container-professions'>
 			<Typography variant='h4' component='h2' className='title-professions'>
 				Professions
 			</Typography>

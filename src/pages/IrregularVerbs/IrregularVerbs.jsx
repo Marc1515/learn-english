@@ -36,13 +36,15 @@ const IrregularVerbs = () => {
 			</Typography>
 			<div className='accordions-container'>
 				<Accordion
-					expanded={expanded === 'panel1'}
-					onChange={(event, isExpanded) => handleChange(isExpanded, 'panel1')}
+					expanded={expanded === 'panel1-irregularVerbs'}
+					onChange={(event, isExpanded) =>
+						handleChange(isExpanded, 'panel1-irregularVerbs')
+					}
 				>
 					<AccordionSummary
 						expandIcon={<ExpandMoreIcon />}
-						aria-controls='panel1a-content'
-						id='panel1a-header'
+						aria-controls='panel1a-content-irregularVerbs'
+						id='panel1a-header-irregularVerbs'
 					>
 						<Typography py={1} variant='h5' component='h2'>
 							A - C
@@ -76,13 +78,15 @@ const IrregularVerbs = () => {
 					</AccordionDetails>
 				</Accordion>
 				<Accordion
-					expanded={expanded === 'panel2'}
-					onChange={(event, isExpanded) => handleChange(isExpanded, 'panel2')}
+					expanded={expanded === 'panel2-irregularVerbs'}
+					onChange={(event, isExpanded) =>
+						handleChange(isExpanded, 'panel2-irregularVerbs')
+					}
 				>
 					<AccordionSummary
 						expandIcon={<ExpandMoreIcon />}
-						aria-controls='panel2a-content'
-						id='panel2a-header'
+						aria-controls='panel2a-content-irregularVerbs'
+						id='panel2a-header-irregularVerbs'
 					>
 						<Typography py={1} variant='h5' component='h2'>
 							D - G
@@ -116,13 +120,15 @@ const IrregularVerbs = () => {
 					</AccordionDetails>
 				</Accordion>
 				<Accordion
-					expanded={expanded === 'panel3'}
-					onChange={(event, isExpanded) => handleChange(isExpanded, 'panel3')}
+					expanded={expanded === 'panel3-irregularVerbs'}
+					onChange={(event, isExpanded) =>
+						handleChange(isExpanded, 'panel3-irregularVerbs')
+					}
 				>
 					<AccordionSummary
 						expandIcon={<ExpandMoreIcon />}
-						aria-controls='panel3a-content'
-						id='panel3a-header'
+						aria-controls='panel3a-content-irregularVerbs'
+						id='panel3a-header-irregularVerbs'
 					>
 						<Typography py={1} variant='h5' component='h2'>
 							H - M
@@ -156,13 +162,15 @@ const IrregularVerbs = () => {
 					</AccordionDetails>
 				</Accordion>
 				<Accordion
-					expanded={expanded === 'panel4'}
-					onChange={(event, isExpanded) => handleChange(isExpanded, 'panel4')}
+					expanded={expanded === 'panel4-irregularVerbs'}
+					onChange={(event, isExpanded) =>
+						handleChange(isExpanded, 'panel4-irregularVerbs')
+					}
 				>
 					<AccordionSummary
 						expandIcon={<ExpandMoreIcon />}
-						aria-controls='panel4a-content'
-						id='panel4a-header'
+						aria-controls='panel4a-content-irregularVerbs'
+						id='panel4a-header-irregularVerbs'
 					>
 						<Typography py={1} variant='h5' component='h2'>
 							O - R
@@ -196,13 +204,15 @@ const IrregularVerbs = () => {
 					</AccordionDetails>
 				</Accordion>
 				<Accordion
-					expanded={expanded === 'panel5'}
-					onChange={(event, isExpanded) => handleChange(isExpanded, 'panel5')}
+					expanded={expanded === 'panel5-irregularVerbs'}
+					onChange={(event, isExpanded) =>
+						handleChange(isExpanded, 'panel5-irregularVerbs')
+					}
 				>
 					<AccordionSummary
 						expandIcon={<ExpandMoreIcon />}
-						aria-controls='panel5a-content'
-						id='panel5a-header'
+						aria-controls='panel5a-content-irregularVerbs'
+						id='panel5a-header-irregularVerbs'
 					>
 						<Typography py={1} variant='h5' component='h2'>
 							S
@@ -236,13 +246,15 @@ const IrregularVerbs = () => {
 					</AccordionDetails>
 				</Accordion>
 				<Accordion
-					expanded={expanded === 'panel6'}
-					onChange={(event, isExpanded) => handleChange(isExpanded, 'panel6')}
+					expanded={expanded === 'panel6-irregularVerbs'}
+					onChange={(event, isExpanded) =>
+						handleChange(isExpanded, 'panel6-irregularVerbs')
+					}
 				>
 					<AccordionSummary
 						expandIcon={<ExpandMoreIcon />}
-						aria-controls='panel6a-content'
-						id='panel6a-header'
+						aria-controls='panel6a-content-irregularVerbs'
+						id='panel6a-header-irregularVerbs'
 					>
 						<Typography py={1} variant='h5' component='h2'>
 							T - W

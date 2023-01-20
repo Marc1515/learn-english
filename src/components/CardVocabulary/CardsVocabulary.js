@@ -28,12 +28,12 @@ const CardsHome = [
 	},
 	{
 		titulo: 'Travel',
-		url: '/#/irregular-verbs',
+		url: '/#/travel',
 		image: travelCard,
 	},
 	{
 		titulo: 'Clothes',
-		url: '/#/phrasal-verbs',
+		url: '/#/clothes',
 		image: clothesCard,
 	},
 ];

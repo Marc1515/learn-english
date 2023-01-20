@@ -18,7 +18,7 @@ import './HumanBody.css';
 const HumanBody = () => {
 	const { expanded, handleChange } = useContext(appContext);
 	return (
-		<div className='accordions-container'>
+		<div className='accordions-container-humanBody'>
 			<Typography variant='h4' component='h2' className='title-humanBody'>
 				HumanBody
 			</Typography>

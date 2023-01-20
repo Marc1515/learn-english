@@ -44,13 +44,15 @@ const EstructuraPresentContinuous = () => {
 	return (
 		<div className='prueba'>
 			<Accordion
-				expanded={expanded === 'panel2'}
-				onChange={(event, isExpanded) => handleChange(isExpanded, 'panel2')}
+				expanded={expanded === 'panel2-presentContinuous'}
+				onChange={(event, isExpanded) =>
+					handleChange(isExpanded, 'panel2-presentContinuous')
+				}
 			>
 				<AccordionSummary
 					expandIcon={<ExpandMoreIcon />}
-					aria-controls='panel2a-content'
-					id='panel2a-header'
+					aria-controls='panel2a-content-presentContinuous'
+					id='panel2a-header-presentContinuous'
 				>
 					<Typography variant='h4' component='h2' gutterBottom>
 						Estructura

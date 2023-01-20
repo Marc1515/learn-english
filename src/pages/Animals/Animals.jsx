@@ -18,7 +18,7 @@ import './Animals.css';
 const Animals = () => {
 	const { expanded, handleChange } = useContext(appContext);
 	return (
-		<div className='accordions-container'>
+		<div className='accordions-container-animals'>
 			<Typography variant='h4' component='h2' className='title-animals'>
 				Animals
 			</Typography>

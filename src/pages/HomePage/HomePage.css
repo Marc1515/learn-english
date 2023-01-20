@@ -35,3 +35,43 @@
 	align-items: center;
 	font-weight: bold;
 }
+
+.homeImage {
+	padding-top: 3rem;
+}
+
+.homeImage :first-child {
+	height: 100%;
+}
+
+.text-grammar-1 {
+	padding-top: 6rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.text-grammar-2 {
+	padding-top: 1rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+.text-grammar-3 {
+	padding-top: 6rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+.text-grammar-4 {
+	padding-top: 1rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+.text-grammar-5 {
+	padding-top: 1rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+.text-grammar-6 {
+	padding-top: 1rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}

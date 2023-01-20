@@ -8,12 +8,13 @@
 }
 
 .presentSimple-title {
-	font-size: 2.5em !important;
+	font-size: 2.5em;
 	padding-bottom: 1rem;
 }
 
 .accordions-container {
 	display: flex;
+	padding: 0 !important;
 	flex-direction: column;
 	justify-content: center;
 	gap: 1rem;

@@ -37,13 +37,15 @@ const AdverbiosPresentSimple = () => {
 	return (
 		<>
 			<Accordion
-				expanded={expanded === 'panel3'}
-				onChange={(event, isExpanded) => handleChange(isExpanded, 'panel3')}
+				expanded={expanded === 'panel3-presentSimple'}
+				onChange={(event, isExpanded) =>
+					handleChange(isExpanded, 'panel3-presentSimple')
+				}
 			>
 				<AccordionSummary
 					expandIcon={<ExpandMoreIcon />}
-					aria-controls='panel3a-content'
-					id='panel3a-header'
+					aria-controls='panel3a-content-presentSimple'
+					id='panel3a-header-presentSimple'
 				>
 					<Typography variant='h4' component='h2' gutterBottom>
 						Adverbios

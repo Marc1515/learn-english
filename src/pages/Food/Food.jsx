@@ -18,7 +18,7 @@ import './Food.css';
 const Food = () => {
 	const { expanded, handleChange } = useContext(appContext);
 	return (
-		<div className='accordions-container'>
+		<div className='accordions-container-food'>
 			<Typography variant='h4' component='h2' className='title-food'>
 				Food
 			</Typography>

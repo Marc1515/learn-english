@@ -39,13 +39,15 @@ const PhrasalVerbs = () => {
 			</Typography>
 			<div className='accordions-container'>
 				<Accordion
-					expanded={expanded === 'panel1'}
-					onChange={(event, isExpanded) => handleChange(isExpanded, 'panel1')}
+					expanded={expanded === 'panel1-phrasalVerbs'}
+					onChange={(event, isExpanded) =>
+						handleChange(isExpanded, 'panel1-phrasalVerbs')
+					}
 				>
 					<AccordionSummary
 						expandIcon={<ExpandMoreIcon />}
-						aria-controls='panel1a-content'
-						id='panel1a-header'
+						aria-controls='panel1a-content-phrasalVerbs'
+						id='panel1a-header-phrasalVerbs'
 					>
 						<Typography py={1} variant='h5' component='h2'>
 							A - B
@@ -75,13 +77,15 @@ const PhrasalVerbs = () => {
 					</AccordionDetails>
 				</Accordion>
 				<Accordion
-					expanded={expanded === 'panel2'}
-					onChange={(event, isExpanded) => handleChange(isExpanded, 'panel2')}
+					expanded={expanded === 'panel2-phrasalVerbs'}
+					onChange={(event, isExpanded) =>
+						handleChange(isExpanded, 'panel2-phrasalVerbs')
+					}
 				>
 					<AccordionSummary
 						expandIcon={<ExpandMoreIcon />}
-						aria-controls='panel2a-content'
-						id='panel2a-header'
+						aria-controls='panel2a-content-phrasalVerbs'
+						id='panel2a-header-phrasalVerbs'
 					>
 						<Typography py={1} variant='h5' component='h2'>
 							C - D
@@ -111,13 +115,15 @@ const PhrasalVerbs = () => {
 					</AccordionDetails>
 				</Accordion>
 				<Accordion
-					expanded={expanded === 'panel3'}
-					onChange={(event, isExpanded) => handleChange(isExpanded, 'panel3')}
+					expanded={expanded === 'panel3-phrasalVerbs'}
+					onChange={(event, isExpanded) =>
+						handleChange(isExpanded, 'panel3-phrasalVerbs')
+					}
 				>
 					<AccordionSummary
 						expandIcon={<ExpandMoreIcon />}
-						aria-controls='panel3a-content'
-						id='panel3a-header'
+						aria-controls='panel3a-content-phrasalVerbs'
+						id='panel3a-header-phrasalVerbs'
 					>
 						<Typography py={1} variant='h5' component='h2'>
 							E - H
@@ -147,13 +153,15 @@ const PhrasalVerbs = () => {
 					</AccordionDetails>
 				</Accordion>
 				<Accordion
-					expanded={expanded === 'panel4'}
-					onChange={(event, isExpanded) => handleChange(isExpanded, 'panel4')}
+					expanded={expanded === 'panel4-phrasalVerbs'}
+					onChange={(event, isExpanded) =>
+						handleChange(isExpanded, 'panel4-phrasalVerbs')
+					}
 				>
 					<AccordionSummary
 						expandIcon={<ExpandMoreIcon />}
-						aria-controls='panel4a-content'
-						id='panel4a-header'
+						aria-controls='panel4a-content-phrasalVerbs'
+						id='panel4a-header-phrasalVerbs'
 					>
 						<Typography py={1} variant='h5' component='h2'>
 							J - P
@@ -183,13 +191,15 @@ const PhrasalVerbs = () => {
 					</AccordionDetails>
 				</Accordion>
 				<Accordion
-					expanded={expanded === 'panel5'}
-					onChange={(event, isExpanded) => handleChange(isExpanded, 'panel5')}
+					expanded={expanded === 'panel5-phrasalVerbs'}
+					onChange={(event, isExpanded) =>
+						handleChange(isExpanded, 'panel5-phrasalVerbs')
+					}
 				>
 					<AccordionSummary
 						expandIcon={<ExpandMoreIcon />}
-						aria-controls='panel5a-content'
-						id='panel5a-header'
+						aria-controls='panel5a-content-phrasalVerbs'
+						id='panel5a-header-phrasalVerbs'
 					>
 						<Typography py={1} variant='h5' component='h2'>
 							R - S
@@ -219,13 +229,15 @@ const PhrasalVerbs = () => {
 					</AccordionDetails>
 				</Accordion>
 				<Accordion
-					expanded={expanded === 'panel6'}
-					onChange={(event, isExpanded) => handleChange(isExpanded, 'panel6')}
+					expanded={expanded === 'panel6-phrasalVerbs'}
+					onChange={(event, isExpanded) =>
+						handleChange(isExpanded, 'panel6-phrasalVerbs')
+					}
 				>
 					<AccordionSummary
 						expandIcon={<ExpandMoreIcon />}
-						aria-controls='panel6a-content'
-						id='panel6a-header'
+						aria-controls='panel6a-content-phrasalVerbs'
+						id='panel6a-header-phrasalVerbs'
 					>
 						<Typography py={1} variant='h5' component='h2'>
 							T - W

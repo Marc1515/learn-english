@@ -1,4 +1,7 @@
-.accordions-container {
+.accordions-container-humanBody {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
 	padding-top: 7rem;
 	padding-left: 1rem;
 	padding-right: 1rem;

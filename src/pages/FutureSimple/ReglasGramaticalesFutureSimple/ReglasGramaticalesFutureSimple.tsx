@@ -36,13 +36,15 @@ const ReglasGramaticalesFutureSimple = () => {
 	return (
 		<>
 			<Accordion
-				expanded={expanded === 'panel1'}
-				onChange={(event, isExpanded) => handleChange(isExpanded, 'panel1')}
+				expanded={expanded === 'panel1-futureSimple'}
+				onChange={(event, isExpanded) =>
+					handleChange(isExpanded, 'panel1-futureSimple')
+				}
 			>
 				<AccordionSummary
 					expandIcon={<ExpandMoreIcon />}
-					aria-controls='panel1a-content'
-					id='panel1a-header'
+					aria-controls='panel1a-content-futureSimple'
+					id='panel1a-header-futureSimple'
 				>
 					<Typography variant='h4' component='h2' gutterBottom>
 						Forma

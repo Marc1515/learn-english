@@ -44,13 +44,15 @@ const EstructuraPresentSimple = () => {
 	return (
 		<div className='prueba'>
 			<Accordion
-				expanded={expanded === 'panel2'}
-				onChange={(event, isExpanded) => handleChange(isExpanded, 'panel2')}
+				expanded={expanded === 'panel2-pastSimple'}
+				onChange={(event, isExpanded) =>
+					handleChange(isExpanded, 'panel2-pastSimple')
+				}
 			>
 				<AccordionSummary
 					expandIcon={<ExpandMoreIcon />}
-					aria-controls='panel2a-content'
-					id='panel2a-header'
+					aria-controls='panel2a-content-pastSimple'
+					id='panel2a-header-pastSimple'
 				>
 					<Typography variant='h4' component='h2' gutterBottom>
 						Estructura

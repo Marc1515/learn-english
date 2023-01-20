@@ -9,6 +9,8 @@ import PhrasalVerbs from './pages/PhrasalVerbs/PhrasalVerbs.jsx';
 import Animals from './pages/Animals/Animals.jsx';
 import Food from './pages/Food/Food.jsx';
 import HumanBody from './pages/HumanBody/HumanBody.jsx';
+import Clothes from './pages/Clothes/Clothes.jsx';
+import Travel from './pages/Travel/Travel.jsx';
 import Professions from './pages/Professions/Professions.jsx';
 import { Vocabulary } from './pages/Vocabulary/Vocabulary';
 import { NotFound } from './components/NotFound/NotFound';
@@ -39,6 +41,8 @@ function App() {
 							<Route path='/food' element={<Food />} />
 							<Route path='/humanBody' element={<HumanBody />} />
 							<Route path='/professions' element={<Professions />} />
+							<Route path='/clothes' element={<Clothes />} />
+							<Route path='/travel' element={<Travel />} />
 							<Route path='*' element={<NotFound />} />
 						</Routes>
 					</AppContextProvider>
