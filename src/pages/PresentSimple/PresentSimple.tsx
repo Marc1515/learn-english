@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import QuizPresentSimple from './QuizPresentSimple/QuizPresentSimple';
 import './PresentSimple.css';
 import Typography from '@mui/material/Typography';
@@ -11,6 +11,9 @@ import AdverbiosPresentSimple from './AdverbiosPresentSimple/AdverbiosPresentSim
 import { QuizContextProvider } from '../../contexts/quizContext';
 
 const PresentSimple = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<>
 			<div className='container-PresentSimple'>

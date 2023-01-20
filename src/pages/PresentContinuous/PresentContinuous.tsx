@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import QuizPresentContinuous from './QuizPresentContinuous/QuizPresentContinuous';
 import './PresentContinuous.css';
 import Typography from '@mui/material/Typography';
@@ -10,6 +10,9 @@ import EstructuraPresentContinuous from './EstructuraPresentContinuous/Estructur
 import { QuizContextProvider } from '../../contexts/quizContextPresentContinuous';
 
 const PresentContinuous = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<>
 			<div className='container-PresentSimple'>

@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { appContext } from '../../contexts/appContext';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -16,6 +16,9 @@ import { rows1, rows2, rows3, rows4, rows5, rows6 } from './IrregularVerbs';
 import './IrregularVerbs.css';
 
 const IrregularVerbs = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	const { expanded, handleChange } = useContext(appContext);
 
 	return (

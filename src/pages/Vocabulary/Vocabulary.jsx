@@ -1,8 +1,12 @@
+import { useEffect } from 'react';
 import Typography from '@mui/material/Typography';
 import CardVocabulary from '../../components/CardVocabulary/CardVocabulary';
 import './Vocabulary.css';
 
 const Vocabulary = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<div className='section1-vocabulary'>
 			<Typography variant='h2' component='h2' className='text-grammar-1'>

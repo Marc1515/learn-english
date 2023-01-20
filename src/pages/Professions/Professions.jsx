@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { appContext } from '../../contexts/appContext';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -16,6 +16,9 @@ import { firstList, secondList, thirdList } from './Professions.js';
 import './Professions.css';
 
 const Professions = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	const { expanded, handleChange } = useContext(appContext);
 	return (
 		<div className='accordions-container-professions'>

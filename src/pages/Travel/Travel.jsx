@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { appContext } from '../../contexts/appContext';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -16,6 +16,9 @@ import { firstlist, secondList, thirthList } from './Travel.js';
 import './Travel.css';
 
 const Travel = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	const { expanded, handleChange } = useContext(appContext);
 	return (
 		<div className='accordions-container-travel'>

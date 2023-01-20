@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import CardHome from '../../components/CardHome/CardHome';
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
@@ -6,6 +7,9 @@ import homeImage from './../../assets/homeImage.jpg';
 import './HomePage.css';
 
 const HomePage = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<>
 			{/* HomePage Section 1 */}

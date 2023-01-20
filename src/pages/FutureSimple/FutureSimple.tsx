@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import QuizFutureSimple from './QuizFutureSimple/QuizFutureSimple';
 import './FutureSimple.css';
 import Typography from '@mui/material/Typography';
@@ -10,6 +10,9 @@ import EstructuraFutureSimple from './EstructuraFutureSimple/EstructuraFutureSim
 import { QuizContextProvider } from '../../contexts/quizContextFutureSimple';
 
 const FutureSimple = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<>
 			<div className='container-PresentSimple'>
