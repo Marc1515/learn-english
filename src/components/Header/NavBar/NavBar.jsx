@@ -144,5 +144,6 @@ const BgDiv = styled.div`
 		left: 0;
 		width: 100%;
 		height: 100%;
+		box-shadow: 6rem 6rem 15rem 8rem black;
 	}
 `;
