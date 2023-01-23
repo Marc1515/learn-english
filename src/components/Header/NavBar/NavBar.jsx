@@ -32,7 +32,7 @@ const NavBar = () => {
 					<a href='/#/grammar' onClick={handleClick}>
 						Grammar
 					</a>
-					<a href='/#/' onClick={handleClick}>
+					<a href='/#/faqs' onClick={handleClick}>
 						FAQs
 					</a>
 				</div>

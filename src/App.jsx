@@ -12,6 +12,7 @@ import HumanBody from './pages/HumanBody/HumanBody.jsx';
 import Clothes from './pages/Clothes/Clothes.jsx';
 import Travel from './pages/Travel/Travel.jsx';
 import Professions from './pages/Professions/Professions.jsx';
+import FAQs from './pages/FAQs/FAQs';
 import { Vocabulary } from './pages/Vocabulary/Vocabulary';
 import { Grammar } from './pages/Grammar/Grammar';
 import { NotFound } from './components/NotFound/NotFound';
@@ -45,6 +46,7 @@ function App() {
 							<Route path='/clothes' element={<Clothes />} />
 							<Route path='/travel' element={<Travel />} />
 							<Route path='/grammar' element={<Grammar />} />
+							<Route path='/faqs' element={<FAQs />} />
 							<Route path='*' element={<NotFound />} />
 						</Routes>
 					</AppContextProvider>
