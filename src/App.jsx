@@ -13,6 +13,7 @@ import Clothes from './pages/Clothes/Clothes.jsx';
 import Travel from './pages/Travel/Travel.jsx';
 import Professions from './pages/Professions/Professions.jsx';
 import { Vocabulary } from './pages/Vocabulary/Vocabulary';
+import { Grammar } from './pages/Grammar/Grammar';
 import { NotFound } from './components/NotFound/NotFound';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
@@ -43,6 +44,7 @@ function App() {
 							<Route path='/professions' element={<Professions />} />
 							<Route path='/clothes' element={<Clothes />} />
 							<Route path='/travel' element={<Travel />} />
+							<Route path='/grammar' element={<Grammar />} />
 							<Route path='*' element={<NotFound />} />
 						</Routes>
 					</AppContextProvider>

@@ -29,8 +29,8 @@ const NavBar = () => {
 					<a href='/#/vocabulary' onClick={handleClick}>
 						Vocabulary
 					</a>
-					<a href='/#/' onClick={handleClick}>
-						Perfil
+					<a href='/#/grammar' onClick={handleClick}>
+						Grammar
 					</a>
 					<a href='/#/' onClick={handleClick}>
 						FAQs
@@ -73,6 +73,7 @@ const NavContainer = styled.nav`
 		color: white;
 		margin-right: 1rem;
 	}
+
 	.links {
 		position: absolute;
 		top: -700px;
@@ -115,6 +116,9 @@ const NavContainer = styled.nav`
 			color: white;
 			padding-top: 0.5rem;
 			padding-bottom: 0.5rem;
+			a:active {
+				visibility: hidden;
+			}
 		}
 	}
 	.burguer {
@@ -144,6 +148,6 @@ const BgDiv = styled.div`
 		left: 0;
 		width: 100%;
 		height: 100%;
-		box-shadow: 6rem 6rem 15rem 8rem black;
+		/* box-shadow: 4rem 4rem 15rem black; */
 	}
 `;
