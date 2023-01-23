@@ -53,9 +53,13 @@
 		gap: 1.5rem;
 	}
 
-	.right-footer span {
+	.right-footer :first-child {
 		font-size: xx-large;
 		padding-top: 4rem;
+	}
+
+	.right-footer span {
+		font-size: xx-large;
 	}
 
 	.explication-right-footer {

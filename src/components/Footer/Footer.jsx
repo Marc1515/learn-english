@@ -29,7 +29,8 @@ const Footer = () => {
 				</a>
 			</div>
 			<div className='right-footer'>
-				<span>Marc España Quinquilla</span>
+				<span>Marc España</span>
+				<span>Quinquilla</span>
 				<p className='explication-right-footer'>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
 					maiores officia pariatur erdsa.
