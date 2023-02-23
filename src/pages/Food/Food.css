@@ -10,3 +10,16 @@
 .title-food {
 	padding-bottom: 2rem;
 }
+
+@media (min-width: 767px) {
+	.accordions-wrapper-food {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-bottom: 10rem;
+	}
+
+	.accordions-container-food {
+		width: 35rem;
+	}
+}

@@ -21,118 +21,120 @@ const Animals = () => {
 	}, []);
 	const { expanded, handleChange } = useContext(appContext);
 	return (
-		<div className='accordions-container-animals'>
-			<Typography variant='h4' component='h2' className='title-animals'>
-				Animals
-			</Typography>
-			<Accordion
-				expanded={expanded === 'panel1'}
-				onChange={(event, isExpanded) => handleChange(isExpanded, 'panel1')}
-			>
-				<AccordionSummary
-					expandIcon={<ExpandMoreIcon />}
-					aria-controls='panel1a-content'
-					id='panel1a-header'
+		<div className='accordions-wrapper-animals'>
+			<div className='accordions-container-animals'>
+				<Typography variant='h4' component='h2' className='title-animals'>
+					Animals
+				</Typography>
+				<Accordion
+					expanded={expanded === 'panel1'}
+					onChange={(event, isExpanded) => handleChange(isExpanded, 'panel1')}
 				>
-					<Typography py={1} variant='h5' component='h2'>
-						Mammals
-					</Typography>
-				</AccordionSummary>
-				<AccordionDetails>
-					<TableContainer component={Paper}>
-						<Table aria-label='simple table'>
-							<TableHead>
-								<TableRow>
-									<TableCell>Name</TableCell>
-									<TableCell>Traduction</TableCell>
-								</TableRow>
-							</TableHead>
-							<TableBody>
-								{mammals.map((row) => (
-									<TableRow key={row.animal}>
-										<TableCell component='th' scope='row'>
-											{row.animal}
-										</TableCell>
-										<TableCell>{row.traduction}</TableCell>
+					<AccordionSummary
+						expandIcon={<ExpandMoreIcon />}
+						aria-controls='panel1a-content'
+						id='panel1a-header'
+					>
+						<Typography py={1} variant='h5' component='h2'>
+							Mammals
+						</Typography>
+					</AccordionSummary>
+					<AccordionDetails>
+						<TableContainer component={Paper}>
+							<Table aria-label='simple table'>
+								<TableHead>
+									<TableRow>
+										<TableCell>Name</TableCell>
+										<TableCell>Traduction</TableCell>
 									</TableRow>
-								))}
-							</TableBody>
-						</Table>
-					</TableContainer>
-				</AccordionDetails>
-			</Accordion>
-			<Accordion
-				expanded={expanded === 'panel2'}
-				onChange={(event, isExpanded) => handleChange(isExpanded, 'panel2')}
-			>
-				<AccordionSummary
-					expandIcon={<ExpandMoreIcon />}
-					aria-controls='panel2a-content'
-					id='panel2a-header'
+								</TableHead>
+								<TableBody>
+									{mammals.map((row) => (
+										<TableRow key={row.animal}>
+											<TableCell component='th' scope='row'>
+												{row.animal}
+											</TableCell>
+											<TableCell>{row.traduction}</TableCell>
+										</TableRow>
+									))}
+								</TableBody>
+							</Table>
+						</TableContainer>
+					</AccordionDetails>
+				</Accordion>
+				<Accordion
+					expanded={expanded === 'panel2'}
+					onChange={(event, isExpanded) => handleChange(isExpanded, 'panel2')}
 				>
-					<Typography py={1} variant='h5' component='h2'>
-						Reptiles
-					</Typography>
-				</AccordionSummary>
-				<AccordionDetails>
-					<TableContainer component={Paper}>
-						<Table aria-label='simple table'>
-							<TableHead>
-								<TableRow>
-									<TableCell>Name</TableCell>
-									<TableCell>Traduction</TableCell>
-								</TableRow>
-							</TableHead>
-							<TableBody>
-								{reptiles.map((row) => (
-									<TableRow key={row.animal}>
-										<TableCell component='th' scope='row'>
-											{row.animal}
-										</TableCell>
-										<TableCell>{row.traduction}</TableCell>
+					<AccordionSummary
+						expandIcon={<ExpandMoreIcon />}
+						aria-controls='panel2a-content'
+						id='panel2a-header'
+					>
+						<Typography py={1} variant='h5' component='h2'>
+							Reptiles
+						</Typography>
+					</AccordionSummary>
+					<AccordionDetails>
+						<TableContainer component={Paper}>
+							<Table aria-label='simple table'>
+								<TableHead>
+									<TableRow>
+										<TableCell>Name</TableCell>
+										<TableCell>Traduction</TableCell>
 									</TableRow>
-								))}
-							</TableBody>
-						</Table>
-					</TableContainer>
-				</AccordionDetails>
-			</Accordion>
-			<Accordion
-				expanded={expanded === 'panel3'}
-				onChange={(event, isExpanded) => handleChange(isExpanded, 'panel3')}
-			>
-				<AccordionSummary
-					expandIcon={<ExpandMoreIcon />}
-					aria-controls='panel3a-content'
-					id='panel3a-header'
+								</TableHead>
+								<TableBody>
+									{reptiles.map((row) => (
+										<TableRow key={row.animal}>
+											<TableCell component='th' scope='row'>
+												{row.animal}
+											</TableCell>
+											<TableCell>{row.traduction}</TableCell>
+										</TableRow>
+									))}
+								</TableBody>
+							</Table>
+						</TableContainer>
+					</AccordionDetails>
+				</Accordion>
+				<Accordion
+					expanded={expanded === 'panel3'}
+					onChange={(event, isExpanded) => handleChange(isExpanded, 'panel3')}
 				>
-					<Typography py={1} variant='h5' component='h2'>
-						Fishes
-					</Typography>
-				</AccordionSummary>
-				<AccordionDetails>
-					<TableContainer component={Paper}>
-						<Table aria-label='simple table'>
-							<TableHead>
-								<TableRow>
-									<TableCell>Name</TableCell>
-									<TableCell>Traduction</TableCell>
-								</TableRow>
-							</TableHead>
-							<TableBody>
-								{fishes.map((row) => (
-									<TableRow key={row.animal}>
-										<TableCell component='th' scope='row'>
-											{row.animal}
-										</TableCell>
-										<TableCell>{row.traduction}</TableCell>
+					<AccordionSummary
+						expandIcon={<ExpandMoreIcon />}
+						aria-controls='panel3a-content'
+						id='panel3a-header'
+					>
+						<Typography py={1} variant='h5' component='h2'>
+							Fishes
+						</Typography>
+					</AccordionSummary>
+					<AccordionDetails>
+						<TableContainer component={Paper}>
+							<Table aria-label='simple table'>
+								<TableHead>
+									<TableRow>
+										<TableCell>Name</TableCell>
+										<TableCell>Traduction</TableCell>
 									</TableRow>
-								))}
-							</TableBody>
-						</Table>
-					</TableContainer>
-				</AccordionDetails>
-			</Accordion>
+								</TableHead>
+								<TableBody>
+									{fishes.map((row) => (
+										<TableRow key={row.animal}>
+											<TableCell component='th' scope='row'>
+												{row.animal}
+											</TableCell>
+											<TableCell>{row.traduction}</TableCell>
+										</TableRow>
+									))}
+								</TableBody>
+							</Table>
+						</TableContainer>
+					</AccordionDetails>
+				</Accordion>
+			</div>
 		</div>
 	);
 };

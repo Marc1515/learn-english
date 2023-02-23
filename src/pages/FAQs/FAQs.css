@@ -10,3 +10,16 @@
 .title-FAQs {
 	padding-bottom: 2rem;
 }
+
+@media (min-width: 767px) {
+	.accordions-wrapper-FAQs {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-bottom: 10rem;
+	}
+
+	.accordions-container-FAQs {
+		width: 35rem;
+	}
+}

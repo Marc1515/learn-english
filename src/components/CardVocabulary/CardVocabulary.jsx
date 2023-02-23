@@ -1,7 +1,7 @@
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
 import CardsVocabulary from './CardsVocabulary';
-/* import './CardVocabulary.css'; */
+import './CardVocabulary.css';
 
 const CardVocabulary = () => {
 	return (

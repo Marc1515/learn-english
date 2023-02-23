@@ -10,3 +10,16 @@
 .title-clothes {
 	padding-bottom: 2rem;
 }
+
+@media (min-width: 767px) {
+	.accordions-wrapper-clothes {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-bottom: 10rem;
+	}
+
+	.accordions-container-clothes {
+		width: 35rem;
+	}
+}

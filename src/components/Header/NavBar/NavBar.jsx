@@ -57,6 +57,11 @@ const NavContainer = styled.nav`
 	width: 100%;
 	z-index: 5;
 
+	@media (min-width: 768px) {
+		height: 3.5rem;
+		font-size: 1.5rem;
+	}
+
 	.container-navbar {
 		z-index: 5;
 		padding-left: 1rem;
@@ -90,6 +95,7 @@ const NavContainer = styled.nav`
 		}
 		@media (min-width: 768px) {
 			position: initial;
+
 			margin: 0;
 			a {
 				font-size: 1rem;

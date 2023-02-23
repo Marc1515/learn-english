@@ -10,3 +10,16 @@
 .title-humanBody {
 	padding-bottom: 2rem;
 }
+
+@media (min-width: 767px) {
+	.accordions-wrapper-humnanBody {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-bottom: 10rem;
+	}
+
+	.accordions-container-humanBody {
+		width: 35rem;
+	}
+}

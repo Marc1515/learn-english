@@ -22,15 +22,15 @@ const Footer = () => {
 					<InstagramIcon />
 				</a>
 				<a href='https://www.linkedin.com/in/marc-espa%C3%B1a-833924141/'>
-					<LinkedInIcon />
+					<LinkedInIcon className='center-icon' />
 				</a>
 				<a href='https://twitter.com/MaarcEsp15'>
 					<TwitterIcon />
 				</a>
 			</div>
 			<div className='right-footer'>
-				<span>Marc España</span>
-				<span>Quinquilla</span>
+				<span>Marc España Quinquilla</span>
+
 				<p className='explication-right-footer'>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
 					maiores officia pariatur erdsa.
@@ -39,7 +39,7 @@ const Footer = () => {
 					<MailOutlineIcon /> meq.1515@gmail.com
 				</p>
 				<p className='phone-right-footer'>
-					<PhoneIcon /> 628246363
+					<PhoneIcon /> 628 24 63 63
 				</p>
 			</div>
 		</div>
